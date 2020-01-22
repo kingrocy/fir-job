@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="86d0340d-36cf-42c6-880c-7a59ef1813c5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/dushaoyun.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/fir-job.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ReadMe.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-test/client-test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-test/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-test/src/main/java/com/yunhui/job/test/ClientApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-test/src/main/java/com/yunhui/job/test/job/TestJobHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-test/src/main/java/com/yunhui/job/test/job/config/JobConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-test/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-test/src/main/resources/fir-job.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-test/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-test/target/classes/com/yunhui/job/test/job/TestJobHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-test/target/classes/com/yunhui/job/test/job/config/JobConfiguration.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-test/target/classes/fir-job.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client.log/spring.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/java/com/yunhui/job/anno/JobHandlerName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/java/com/yunhui/job/client/FirClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/java/com/yunhui/job/config/JobConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/java/com/yunhui/job/factory/JobHandlerFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/java/com/yunhui/job/handler/ClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/java/com/yunhui/job/handler/JobHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/target/classes/com/yunhui/job/anno/JobHandlerName.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/target/classes/com/yunhui/job/client/FirClient$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/target/classes/com/yunhui/job/client/FirClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/target/classes/com/yunhui/job/config/JobConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/target/classes/com/yunhui/job/factory/JobHandlerFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/target/classes/com/yunhui/job/handler/ClientHandler$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/target/classes/com/yunhui/job/handler/ClientHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/target/classes/com/yunhui/job/handler/JobHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/target/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/yunhui/job/common/entity/DelayStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/yunhui/job/common/entity/Job.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/yunhui/job/common/entity/QueueJob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/yunhui/job/common/entity/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/yunhui/job/common/entity/SimpleDelayStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/yunhui/job/common/proto/RequestProto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/request.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/yunhui/job/common/entity/DelayStrategy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/yunhui/job/common/entity/Job.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/yunhui/job/common/entity/QueueJob$QueueJobBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/yunhui/job/common/entity/QueueJob.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/yunhui/job/common/entity/Result.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/yunhui/job/common/entity/SimpleDelayStrategy$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/yunhui/job/common/entity/SimpleDelayStrategy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/yunhui/job/common/proto/RequestProto$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/yunhui/job/common/proto/RequestProto$Param$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/yunhui/job/common/proto/RequestProto$Param$Builder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/yunhui/job/common/proto/RequestProto$Param.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/yunhui/job/common/proto/RequestProto$ParamOrBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/yunhui/job/common/proto/RequestProto$Request$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/yunhui/job/common/proto/RequestProto$Request$Builder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/yunhui/job/common/proto/RequestProto$Request.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/yunhui/job/common/proto/RequestProto$RequestOrBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/yunhui/job/common/proto/RequestProto$Status$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/yunhui/job/common/proto/RequestProto$Status.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/yunhui/job/common/proto/RequestProto$Type$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/yunhui/job/common/proto/RequestProto$Type.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/yunhui/job/common/proto/RequestProto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/fir-job-common-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fir-job.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/robot.log/spring.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server.log/spring.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/yunhui/job/ServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/yunhui/job/bean/JobExecuteRecord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/yunhui/job/connect/ConnectPool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/yunhui/job/controller/CoreController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/yunhui/job/dao/BasicDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/yunhui/job/handler/ServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/yunhui/job/mapper/JobExecuteRecordMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/yunhui/job/mapper/JobExecuteRecordMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/yunhui/job/queue/JobQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/yunhui/job/server/FirServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/yunhui/job/work/WorkFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/yunhui/job/work/WorkRunnable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/yunhui/job/work/Worker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/classes/com/yunhui/job/bean/JobExecuteRecord.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/classes/com/yunhui/job/connect/ConnectPool.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/classes/com/yunhui/job/controller/CoreController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/classes/com/yunhui/job/dao/BasicDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/classes/com/yunhui/job/handler/ServerHandler$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/classes/com/yunhui/job/handler/ServerHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/classes/com/yunhui/job/mapper/JobExecuteRecordMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/classes/com/yunhui/job/queue/JobQueue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/classes/com/yunhui/job/server/FirServer$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/classes/com/yunhui/job/server/FirServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/classes/com/yunhui/job/work/WorkFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/classes/com/yunhui/job/work/WorkRunnable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/classes/com/yunhui/job/work/Worker.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/base/src/main/java/com/yunhui/base/bitmap/TestBitMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/delay-queue/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/delay-queue/src/main/java/com/yunhui/DelayQueueTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/delay-queue/src/main/java/com/yunhui/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/guava/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/guava/src/main/java/CacheTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/guava/src/main/java/ImmutableCollectionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/guava/src/main/java/OptionalTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/guava/src/main/java/OrderingTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/guava/src/main/java/PreconditTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/leetcode/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/leetcode/src/main/java/com/yunhui/leetcode/TestSolution1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/leetcode/src/main/java/com/yunhui/leetcode/easy/TaskIsPalindrome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/leetcode/src/main/java/com/yunhui/leetcode/easy/TaskIsValid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/leetcode/src/main/java/com/yunhui/leetcode/easy/TaskLongestCommonPrefix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/leetcode/src/main/java/com/yunhui/leetcode/easy/TaskReverse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/leetcode/src/main/java/com/yunhui/leetcode/easy/TaskRomanToInt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/leetcode/src/main/java/com/yunhui/leetcode/medium/TaskAddTwoNumbers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/neo4j/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/neo4j/src/main/java/com/yunhui/Movie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/neo4j/src/main/java/com/yunhui/Neo4jClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/neo4j/src/main/java/com/yunhui/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/neo4j/src/main/java/com/yunhui/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/netty-protobuf/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/netty-protobuf/src/main/java/com/yunhui/netty/conversion/Decoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/netty-protobuf/src/main/java/com/yunhui/netty/conversion/Encoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/netty-protobuf/src/main/java/com/yunhui/netty/proto/TestProto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/netty-protobuf/src/main/java/com/yunhui/netty/proto/Transmission.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/netty-protobuf/src/main/java/com/yunhui/netty/proto/TransmissionProtocol.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/netty-protobuf/src/main/java/com/yunhui/netty/test/FirstClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/netty-protobuf/src/main/java/com/yunhui/netty/test/FirstServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/netty-protobuf/src/main/java/com/yunhui/netty/test/NettyClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/netty-protobuf/src/main/java/com/yunhui/netty/test/NettyServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/parallel-work/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/parallel-work/src/src/main/java/com/yunhui/paraller/work/FeatureTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/parallel-work/src/src/main/java/com/yunhui/paraller/work/Job.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/parallel-work/src/src/main/java/com/yunhui/paraller/work/JobExecutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/parallel-work/src/src/main/java/com/yunhui/paraller/work/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/parallel-work/src/src/main/java/com/yunhui/paraller/work/ParallerExecute.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/parallel-work/src/src/main/java/com/yunhui/paraller/work/SerialExecute.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/pmml/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/pmml/src/main/java/com/yunhui/pmml/FieldMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/pmml/src/main/java/com/yunhui/pmml/ModelCalcConsole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/pmml/src/main/java/com/yunhui/pmml/ModelInvoker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/pmml/src/main/java/com/yunhui/pmml/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/pmml/src/main/java/com/yunhui/pmml/TestFlowCredict.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/pmml/src/main/resources/PredFalseHoldRoom.pmml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/pmml/src/main/resources/cyp_abortive_s1.pmml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/protobuf/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/protobuf/src/main/java/Login.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/protobuf/src/main/java/com/yunhui/protobuf/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/spi/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/spi/src/main/java/com/yunhui/Bumblebee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/spi/src/main/java/com/yunhui/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/spi/src/main/java/com/yunhui/OptimusPrime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/spi/src/main/java/com/yunhui/Robot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/spi/src/main/resources/META-INF/services/com.yunhui.Robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/test/src/main/java/RobotTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/test/src/main/java/TestStackOverFlow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/thread/src/main/java/com/yunhui/thread/asyn_future/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/thread/src/main/java/com/yunhui/thread/count_down_latch/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/thread/src/main/java/com/yunhui/thread/forkjoinpool/CustomTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/thread/src/main/java/com/yunhui/thread/forkjoinpool/ForkJoinPoolDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/thread/src/main/java/com/yunhui/thread/forkjoinpool/ForkJoinPoolDemo2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/thread/src/main/java/com/yunhui/thread/forkjoinpool/ForkJoinPoolDemo3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/thread/src/main/java/com/yunhui/thread/run_exception_catch/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/thread/src/main/java/com/yunhui/thread/semaphore/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/thread/src/main/java/com/yunhui/thread/semaphore/TestSemphore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/thread/src/main/java/com/yunhui/thread/wait_notify/TestPrint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/wechat/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/wechat/src/main/java/com/yunhui/wechat/HelloBot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/zookeeper/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/zookeeper/src/main/java/com/yunhui/zk/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/zookeeper/src/main/java/com/yunhui/zk/lock/Constant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/zookeeper/src/main/java/com/yunhui/zk/lock/MyZkSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaer/zookeeper/src/main/java/com/yunhui/zk/lock/ZookeeperDistributedLock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-source/src/main/java/com/yunhui/springboot/autoconfiguration/Black.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-source/src/main/java/com/yunhui/springboot/autoconfiguration/Blue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-source/src/main/java/com/yunhui/springboot/autoconfiguration/ColorConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-source/src/main/java/com/yunhui/springboot/autoconfiguration/ColorImportBeanDefinitionRegistrar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-source/src/main/java/com/yunhui/springboot/autoconfiguration/ColorImportSelector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-source/src/main/java/com/yunhui/springboot/autoconfiguration/ColorRegistrarConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-source/src/main/java/com/yunhui/springboot/autoconfiguration/EnableColor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-source/src/main/java/com/yunhui/springboot/autoconfiguration/Green.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-source/src/main/java/com/yunhui/springboot/autoconfiguration/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-source/src/main/java/com/yunhui/springboot/autoconfiguration/Red.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-source/src/main/java/com/yunhui/springboot/autoconfiguration/Yellow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/yunhui/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/yunhui/bean/Uid.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/yunhui/config/AbstractBaseConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/yunhui/config/AppProperties.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/yunhui/config/IdConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/yunhui/config/InitSystemConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/yunhui/controller/CoreController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/yunhui/core/AtomicUid.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/yunhui/dao/UidDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/yunhui/mapper/UidMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/yunhui/service/UidService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/yunhui/service/impl/UidServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/mapper/UidMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/test/java/com/yunhui/AppTest.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1WBYkhkIuz6ieFrm07jgN82lxir" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client-test/src/main/resources" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Rainbow Brackets" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/server/src/main/java/com/yunhui/job/mapper" />
+      <recent name="$PROJECT_DIR$/common/src/main/java" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.yunhui.job" />
+      <recent name="com.yunhui.job.queue" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client-test/src/main/resources" />
+      <recent name="$PROJECT_DIR$/server/src/main/resources" />
+      <recent name="$PROJECT_DIR$/client/src/main/resources" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ServerApplication">
+    <configuration name="ClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="client-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yunhui.job.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yunhui.job.test.ClientApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yunhui.job.ServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.41" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER" value="false" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_Default_(Template)_Project" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="54237" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.ClientApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="86d0340d-36cf-42c6-880c-7a59ef1813c5" name="Default Changelist" comment="" />
+      <created>1578622795532</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1578622795532</updated>
+      <workItem from="1578622798051" duration="791000" />
+      <workItem from="1578623720225" duration="765000" />
+      <workItem from="1578624604369" duration="308000" />
+      <workItem from="1578625532496" duration="6139000" />
+      <workItem from="1578639880507" duration="191000" />
+      <workItem from="1578640108940" duration="83000" />
+      <workItem from="1578647194744" duration="1664000" />
+      <workItem from="1578649588407" duration="4248000" />
+      <workItem from="1579244302753" duration="832000" />
+      <workItem from="1579502640752" duration="3766000" />
+      <workItem from="1579569319982" duration="11306000" />
+      <workItem from="1579588813565" duration="16565000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="332" y="-875" key="#Project_Structure" timestamp="1579503745609">
+      <screen x="-228" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="332" y="-875" key="#Project_Structure/0.0.1440.900/-228.-1080.1920.1080@-228.-1080.1920.1080" timestamp="1579503745609" />
+    <state x="196" y="-878" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579658032315">
+      <screen x="-228" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="196" y="-878" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900/-228.-1080.1920.1080@-228.-1080.1920.1080" timestamp="1579658032315" />
+    <state x="545" y="-817" key="#com.intellij.ide.util.MemberChooser" timestamp="1579655947540">
+      <screen x="-228" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="545" y="-817" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900/-228.-1080.1920.1080@-228.-1080.1920.1080" timestamp="1579655947540" />
+    <state x="359" y="393" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1579588075498">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="251" y="-608" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1440.900/-228.-1080.1920.1080@-228.-1080.1920.1080" timestamp="1579573884389" />
+    <state x="359" y="393" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1440.900@0.0.1440.900" timestamp="1579588075498" />
+    <state x="399" y="-1080" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1579573728263">
+      <screen x="-228" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="399" y="-1080" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1440.900/-228.-1080.1920.1080@-228.-1080.1920.1080" timestamp="1579573728263" />
+    <state x="470" y="-786" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1579657542036">
+      <screen x="-228" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="470" y="-786" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900/-228.-1080.1920.1080@-228.-1080.1920.1080" timestamp="1579657542036" />
+    <state x="246" y="-943" key="CommitChangelistDialog2" timestamp="1579600152517">
+      <screen x="-228" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="246" y="-943" key="CommitChangelistDialog2/0.0.1440.900/-228.-1080.1920.1080@-228.-1080.1920.1080" timestamp="1579600152517" />
+    <state width="485" height="466" key="DebuggerActiveHint" timestamp="1579660094048">
+      <screen x="-228" y="-1080" width="1920" height="1080" />
+    </state>
+    <state width="485" height="466" key="DebuggerActiveHint/0.0.1440.900/-228.-1080.1920.1080@-228.-1080.1920.1080" timestamp="1579660094048" />
+    <state width="1878" height="503" key="GridCell.Tab.0.bottom" timestamp="1579661177922">
+      <screen x="-228" y="-1080" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="503" key="GridCell.Tab.0.bottom/0.0.1440.900/-228.-1080.1920.1080@-228.-1080.1920.1080" timestamp="1579661177922" />
+    <state width="1878" height="375" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1579588773864" />
+    <state width="1878" height="491" key="GridCell.Tab.0.bottom/0.23.1440.820/-228.-1080.1920.1080@-228.-1080.1920.1080" timestamp="1579660477638" />
+    <state width="1878" height="503" key="GridCell.Tab.0.center" timestamp="1579661177918">
+      <screen x="-228" y="-1080" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="503" key="GridCell.Tab.0.center/0.0.1440.900/-228.-1080.1920.1080@-228.-1080.1920.1080" timestamp="1579661177918" />
+    <state width="1878" height="375" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1579588773862" />
+    <state width="1878" height="491" key="GridCell.Tab.0.center/0.23.1440.820/-228.-1080.1920.1080@-228.-1080.1920.1080" timestamp="1579660477634" />
+    <state width="1878" height="503" key="GridCell.Tab.0.left" timestamp="1579661177917">
+      <screen x="-228" y="-1080" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="503" key="GridCell.Tab.0.left/0.0.1440.900/-228.-1080.1920.1080@-228.-1080.1920.1080" timestamp="1579661177917" />
+    <state width="1878" height="375" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1579588773861" />
+    <state width="1878" height="491" key="GridCell.Tab.0.left/0.23.1440.820/-228.-1080.1920.1080@-228.-1080.1920.1080" timestamp="1579660477633" />
+    <state width="1878" height="503" key="GridCell.Tab.0.right" timestamp="1579661177920">
+      <screen x="-228" y="-1080" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="503" key="GridCell.Tab.0.right/0.0.1440.900/-228.-1080.1920.1080@-228.-1080.1920.1080" timestamp="1579661177920" />
+    <state width="1878" height="375" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1579588773863" />
+    <state width="1878" height="491" key="GridCell.Tab.0.right/0.23.1440.820/-228.-1080.1920.1080@-228.-1080.1920.1080" timestamp="1579660477636" />
+    <state width="1878" height="503" key="GridCell.Tab.1.bottom" timestamp="1579661177927">
+      <screen x="-228" y="-1080" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="503" key="GridCell.Tab.1.bottom/0.0.1440.900/-228.-1080.1920.1080@-228.-1080.1920.1080" timestamp="1579661177927" />
+    <state width="1878" height="375" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1579588773867" />
+    <state width="1878" height="491" key="GridCell.Tab.1.bottom/0.23.1440.820/-228.-1080.1920.1080@-228.-1080.1920.1080" timestamp="1579660477706" />
+    <state width="1878" height="503" key="GridCell.Tab.1.center" timestamp="1579661177925">
+      <screen x="-228" y="-1080" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="503" key="GridCell.Tab.1.center/0.0.1440.900/-228.-1080.1920.1080@-228.-1080.1920.1080" timestamp="1579661177925" />
+    <state width="1878" height="375" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1579588773866" />
+    <state width="1878" height="491" key="GridCell.Tab.1.center/0.23.1440.820/-228.-1080.1920.1080@-228.-1080.1920.1080" timestamp="1579660477703" />
+    <state width="1878" height="503" key="GridCell.Tab.1.left" timestamp="1579661177923">
+      <screen x="-228" y="-1080" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="503" key="GridCell.Tab.1.left/0.0.1440.900/-228.-1080.1920.1080@-228.-1080.1920.1080" timestamp="1579661177923" />
+    <state width="1878" height="375" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1579588773865" />
+    <state width="1878" height="491" key="GridCell.Tab.1.left/0.23.1440.820/-228.-1080.1920.1080@-228.-1080.1920.1080" timestamp="1579660477700" />
+    <state width="1878" height="503" key="GridCell.Tab.1.right" timestamp="1579661177926">
+      <screen x="-228" y="-1080" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="503" key="GridCell.Tab.1.right/0.0.1440.900/-228.-1080.1920.1080@-228.-1080.1920.1080" timestamp="1579661177926" />
+    <state width="1878" height="375" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1579588773866" />
+    <state width="1878" height="491" key="GridCell.Tab.1.right/0.23.1440.820/-228.-1080.1920.1080@-228.-1080.1920.1080" timestamp="1579660477704" />
+    <state x="220" y="-959" key="SettingsEditor" timestamp="1579600621795">
+      <screen x="-228" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="220" y="-959" key="SettingsEditor/0.0.1440.900/-228.-1080.1920.1080@-228.-1080.1920.1080" timestamp="1579600621795" />
+    <state x="304" y="-742" key="com.intellij.ide.util.TipDialog" timestamp="1578647195140">
+      <screen x="-228" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="304" y="-742" key="com.intellij.ide.util.TipDialog/0.0.1440.900/-228.-1080.1920.1080@-228.-1080.1920.1080" timestamp="1578647195140" />
+    <state x="399" y="282" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1578639877831" />
+    <state x="399" y="280" key="com.intellij.ide.util.TipDialog/0.23.1440.821@0.23.1440.821" timestamp="1578640135514" />
+    <state x="398" y="-783" width="667" height="486" key="find.popup" timestamp="1579577160344">
+      <screen x="-228" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="398" y="-783" width="667" height="486" key="find.popup/0.0.1440.900/-228.-1080.1920.1080@-228.-1080.1920.1080" timestamp="1579577160344" />
+    <state x="126" y="-836" key="new project wizard" timestamp="1579600575117">
+      <screen x="-228" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="126" y="-836" key="new project wizard/0.0.1440.900/-228.-1080.1920.1080@-228.-1080.1920.1080" timestamp="1579600575117" />
+    <state x="397" y="-839" width="670" height="676" key="search.everywhere.popup" timestamp="1579598271047">
+      <screen x="-228" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="397" y="-839" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/-228.-1080.1920.1080@-228.-1080.1920.1080" timestamp="1579598271047" />
+    <state x="469" y="201" width="670" height="564" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1579587812087" />
+  </component>
+</project>

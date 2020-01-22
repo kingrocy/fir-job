@@ -1,0 +1,13 @@
+server:
+  port: 80
+  servlet:
+    context-path: /
+spring:
+  datasource:
+    # 使用阿里的Druid连接池
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    # 填写你数据库的url、登录名、密码和数据库名
+    url: jdbc:mysql://127.0.0.1:3306/fir-job?useSSL=false&characterEncoding=utf8
+    username: root
+    password: 1230

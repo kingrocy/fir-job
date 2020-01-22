@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+package com.yunhui.job.common.proto;
+
+option java_package = "com.yunhui.job.common.proto";
+option java_outer_classname = "RequestProto";
+option cc_generic_services = true;
+
+
+message Request {
+
+    Type type = 1;
+
+    Status status = 2;
+
+    repeated Param params = 3;
+}
+
+enum Status {
+    SUCCESS = 0;
+    ERROR = 1;
+}
+
+
+enum Type {
+    PING = 0;
+    PONG = 1;
+    REQUEST = 2;
+    RESPONSE = 3;
+    REGISTER = 4;
+}
+
+message Param {
+    string key = 1;
+    string value = 2;
+}
+
+

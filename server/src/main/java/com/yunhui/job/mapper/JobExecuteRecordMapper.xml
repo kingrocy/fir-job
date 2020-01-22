@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yunhui.job.mapper.JobExecuteRecordMapper">
+
+
+    <insert id="insert" parameterType="com.yunhui.job.bean.JobExecuteRecord" useGeneratedKeys="true" keyColumn="id" keyProperty="id">
+        insert into job_execute_record(job_id, status, create_time, update_time)
+        values (#{jobId,jdbcType=INTEGER}, #{status,jdbcType=INTEGER}, now(), now())
+    </insert>
+
+    <update id="update">
+        update job_execute_record set status=#{status,jdbcType=INTEGER},update_time=now()
+        where id=#{recordId,jdbcType=BIGINT}
+    </update>
+
+
+</mapper>
