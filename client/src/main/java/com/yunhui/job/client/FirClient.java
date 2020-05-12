@@ -3,6 +3,7 @@ package com.yunhui.job.client;
 import com.yunhui.job.config.JobConfig;
 import com.yunhui.job.factory.JobHandlerFactory;
 import com.yunhui.job.handler.ClientHandler;
+import com.yunhui.job.properties.FirJobProperties;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.nio.NioEventLoopGroup;
@@ -37,35 +38,42 @@ public class FirClient implements ApplicationContextAware {
         startClient();
     }
 
-    public FirClient() {
-        init();
+    public FirClient(FirJobProperties firJobProperties) {
+        init(firJobProperties);
     }
 
-    public void init() {
-        //扫描配置文件properties
-        InputStream inputStream = FirClient.class.getClassLoader().getResourceAsStream("fir-job.properties");
-        Properties properties = new Properties();
-        try {
-            properties.load(inputStream);
-        } catch (IOException e) {
-            log.info("load properties exception", e);
+    public void init(FirJobProperties firJobProperties) {
+        if (firJobProperties == null) {
+            //扫描配置文件properties
+            InputStream inputStream = FirClient.class.getClassLoader().getResourceAsStream("fir-job.properties");
+            Properties properties = new Properties();
+            try {
+                properties.load(inputStream);
+            } catch (IOException e) {
+                log.info("load properties exception", e);
+            }
+            firJobProperties = new FirJobProperties();
+            firJobProperties.setAppName(properties.getProperty("fir.job.appName"));
+            firJobProperties.setIp(properties.getProperty("fir.job.ip"));
+            firJobProperties.setServerIp(properties.getProperty("fir.job.serverIp"));
+            firJobProperties.setServerPort(Integer.parseInt(properties.getProperty("fir.job.serverPort", "0")));
         }
-        jobConfig = initConfig(properties);
+        jobConfig = initConfig(firJobProperties);
     }
 
-    private JobConfig initConfig(Properties properties) {
+    private JobConfig initConfig(FirJobProperties firJobProperties) {
         //appName 必填
-        String appName = properties.getProperty("client.appName");
-        String ip = properties.getProperty("client.ip");
-        String serverIp = properties.getProperty("server.ip");
-        String serverPort = properties.getProperty("server.port");
+        String appName = firJobProperties.getAppName();
+        String ip = firJobProperties.getIp();
+        String serverIp = firJobProperties.getServerIp();
+        Integer serverPort = firJobProperties.getServerPort();
         if (StringUtils.isEmpty(appName)) {
             throw new IllegalArgumentException("client.appName missing....");
         }
         if (StringUtils.isEmpty(serverIp)) {
             throw new IllegalArgumentException("server.ip missing....");
         }
-        if (StringUtils.isEmpty(serverPort)) {
+        if (serverPort == null || serverPort == 0) {
             throw new IllegalArgumentException("server.port missing....");
         }
         if (StringUtils.isEmpty(ip)) {
@@ -78,7 +86,7 @@ public class FirClient implements ApplicationContextAware {
                 log.error("getAddress error", e);
             }
         }
-        return new JobConfig(appName, ip, serverIp, Integer.parseInt(serverPort));
+        return new JobConfig(appName, ip, serverIp, serverPort);
     }
 
     private void startClient() {

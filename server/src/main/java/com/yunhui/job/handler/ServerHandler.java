@@ -6,6 +6,7 @@ import com.yunhui.job.connect.ConnectPool;
 import com.yunhui.job.dao.BasicDao;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelFuture;
+import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import lombok.AllArgsConstructor;
@@ -21,6 +22,7 @@ import java.util.List;
  */
 @Slf4j
 @AllArgsConstructor
+@ChannelHandler.Sharable
 public class ServerHandler extends ChannelInboundHandlerAdapter {
 
     private ConnectPool connectPool;

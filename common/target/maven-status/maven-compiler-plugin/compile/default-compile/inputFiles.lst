@@ -1,4 +1,6 @@
+/Users/dushaoyun/work/workspace/java/yun/fir-job/common/src/main/java/com/yunhui/job/common/entity/Result.java
+/Users/dushaoyun/work/workspace/java/yun/fir-job/common/src/main/java/com/yunhui/job/common/proto/RequestProto.java
 /Users/dushaoyun/work/workspace/java/yun/fir-job/common/src/main/java/com/yunhui/job/common/entity/DelayStrategy.java
 /Users/dushaoyun/work/workspace/java/yun/fir-job/common/src/main/java/com/yunhui/job/common/entity/Job.java
+/Users/dushaoyun/work/workspace/java/yun/fir-job/common/src/main/java/com/yunhui/job/common/entity/SimpleDelayStrategy.java
 /Users/dushaoyun/work/workspace/java/yun/fir-job/common/src/main/java/com/yunhui/job/common/entity/QueueJob.java
-/Users/dushaoyun/work/workspace/java/yun/fir-job/common/src/main/java/com/yunhui/job/common/entity/AbstractSimpleDelayStrategy.java

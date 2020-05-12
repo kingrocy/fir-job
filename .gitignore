@@ -33,3 +33,6 @@ build/
 *.log
 .idea/
 *.iml
+
+target/
+*.class
