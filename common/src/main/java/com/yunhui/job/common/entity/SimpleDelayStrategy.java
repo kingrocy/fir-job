@@ -27,9 +27,9 @@ public class SimpleDelayStrategy implements DelayStrategy {
      */
     private Long next;
 
-    public SimpleDelayStrategy(Integer delay,TimeUnit unit){
-        this.delay=delay;
-        this.unit=unit;
+    public SimpleDelayStrategy(Integer delay, TimeUnit unit) {
+        this.delay = delay;
+        this.unit = unit;
         setNext();
     }
 

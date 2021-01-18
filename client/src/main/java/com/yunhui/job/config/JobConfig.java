@@ -17,5 +17,5 @@ public class JobConfig {
     private String ip;
     private String serverIp;
     private Integer serverPort;
-    
+
 }

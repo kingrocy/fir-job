@@ -16,11 +16,11 @@ public class BasicDao {
     @Autowired
     JobExecuteRecordMapper jobExecuteRecordMapper;
 
-    public void addJobExecuteRecord(JobExecuteRecord record){
+    public void addJobExecuteRecord(JobExecuteRecord record) {
         jobExecuteRecordMapper.insert(record);
     }
 
-    public int  updateJobExecuteRecord(Long recordId,Integer status){
+    public int updateJobExecuteRecord(Long recordId, Integer status) {
         return jobExecuteRecordMapper.update(recordId, status);
     }
 }

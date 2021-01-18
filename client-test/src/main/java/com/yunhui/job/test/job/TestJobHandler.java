@@ -1,7 +1,7 @@
 package com.yunhui.job.test.job;
 
 import com.yunhui.job.anno.JobHandlerName;
-import com.yunhui.job.common.entity.Result;
+import com.yunhui.job.common.constant.RequestStatus;
 import com.yunhui.job.handler.JobHandler;
 import lombok.extern.slf4j.Slf4j;
 
@@ -17,8 +17,8 @@ public class TestJobHandler implements JobHandler {
 
 
     @Override
-    public Result<String> invoke(String params) {
+    public RequestStatus invoke(String params) {
         log.info("start execute job,params:{},date:{}", params, new Date());
-        return Result.success("SUCCESS");
+        return RequestStatus.SUCCESS;
     }
 }

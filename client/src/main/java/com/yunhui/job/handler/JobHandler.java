@@ -1,6 +1,6 @@
 package com.yunhui.job.handler;
 
-import com.yunhui.job.common.entity.Result;
+import com.yunhui.job.common.constant.RequestStatus;
 
 /**
  * @Date : 2020/1/21 1:42 下午
@@ -10,8 +10,9 @@ public interface JobHandler {
 
     /**
      * job执行接口
+     *
      * @param params
      * @return
      */
-    Result<String> invoke(String params);
+    RequestStatus invoke(String params);
 }

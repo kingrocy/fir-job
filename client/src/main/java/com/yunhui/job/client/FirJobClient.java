@@ -28,7 +28,7 @@ import java.util.Properties;
  * @Author : dushaoyun
  */
 @Slf4j
-public class FirClient implements ApplicationContextAware {
+public class FirJobClient implements ApplicationContextAware {
 
     private JobConfig jobConfig;
 
@@ -38,14 +38,14 @@ public class FirClient implements ApplicationContextAware {
         startClient();
     }
 
-    public FirClient(FirJobProperties firJobProperties) {
+    public FirJobClient(FirJobProperties firJobProperties) {
         init(firJobProperties);
     }
 
     public void init(FirJobProperties firJobProperties) {
         if (firJobProperties == null) {
             //扫描配置文件properties
-            InputStream inputStream = FirClient.class.getClassLoader().getResourceAsStream("fir-job.properties");
+            InputStream inputStream = FirJobClient.class.getClassLoader().getResourceAsStream("fir-job.properties");
             Properties properties = new Properties();
             try {
                 properties.load(inputStream);

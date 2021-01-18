@@ -3,7 +3,8 @@
 <mapper namespace="com.yunhui.job.mapper.JobExecuteRecordMapper">
 
 
-    <insert id="insert" parameterType="com.yunhui.job.bean.JobExecuteRecord" useGeneratedKeys="true" keyColumn="id" keyProperty="id">
+    <insert id="insert" parameterType="com.yunhui.job.bean.JobExecuteRecord" useGeneratedKeys="true" keyColumn="id"
+            keyProperty="id">
         insert into job_execute_record(job_id, status, create_time, update_time)
         values (#{jobId,jdbcType=INTEGER}, #{status,jdbcType=INTEGER}, now(), now())
     </insert>

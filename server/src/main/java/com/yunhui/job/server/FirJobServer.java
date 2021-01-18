@@ -25,7 +25,7 @@ import javax.annotation.PostConstruct;
  */
 @Slf4j
 @Service
-public class FirServer {
+public class FirJobServer {
 
     private ConnectPool connectPool;
 

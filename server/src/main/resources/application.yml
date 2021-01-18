@@ -8,6 +8,6 @@ spring:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
     # 填写你数据库的url、登录名、密码和数据库名
-    url: jdbc:mysql://127.0.0.1:3306/fir-job?useSSL=false&characterEncoding=utf8
-    username: root
-    password: 1230
+    url: jdbc:mysql://test.database3700.scsite.net:3700/datacenter?useSSL=false&characterEncoding=utf8
+    username: souche_rw
+    password: hbyA8CPqhr5uZxeXuSeEdm5rhp2ZKF

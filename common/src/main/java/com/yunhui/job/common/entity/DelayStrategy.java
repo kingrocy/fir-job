@@ -1,13 +1,15 @@
 package com.yunhui.job.common.entity;
+
 /**
  * @Date : 2020/1/10 11:37 上午
  * @Author : dushaoyun
  */
-public interface DelayStrategy{
+public interface DelayStrategy {
 
     /**
      * 类型
      * 自动还是手动 0手动 1自动
+     *
      * @return
      */
     int type();
@@ -15,6 +17,7 @@ public interface DelayStrategy{
 
     /**
      * 下一次执行时间
+     *
      * @return
      */
     long next();

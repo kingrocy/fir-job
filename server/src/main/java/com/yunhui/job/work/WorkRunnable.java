@@ -30,8 +30,8 @@ public class WorkRunnable implements Runnable {
 
     private ServerHandler serverHandler;
 
-    private JobExecuteRecord addExecuteRecord(Job job){
-        JobExecuteRecord jobExecuteRecord=new JobExecuteRecord();
+    private JobExecuteRecord addExecuteRecord(Job job) {
+        JobExecuteRecord jobExecuteRecord = new JobExecuteRecord();
         jobExecuteRecord.setJobId(job.getJobId());
         jobExecuteRecord.setStatus(0);
         BasicDao basicDao = serverHandler.getBasicDao();
@@ -48,7 +48,7 @@ public class WorkRunnable implements Runnable {
         ChannelHandlerContext ctx = pool.getConnect(ip);
         if (ctx == null) {
             //todo 可以重试 换一台机器
-            log.error("appName:{},ip:{} ctx is null",appName,ip);
+            log.error("appName:{},ip:{} ctx is null", appName, ip);
         }
         //封装消息
         RequestProto.Request request = RequestProto.Request.newBuilder().setType(RequestProto.Type.REQUEST)
@@ -56,7 +56,7 @@ public class WorkRunnable implements Runnable {
                 .addParams(RequestProto.Param.newBuilder().setKey("jobHandler").setValue(job.getJobHandler()).build())
                 .build();
         //发送
-        serverHandler.sendMsg(ctx,request);
+        serverHandler.sendMsg(ctx, request);
     }
 
     @Override

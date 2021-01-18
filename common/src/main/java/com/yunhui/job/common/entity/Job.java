@@ -41,7 +41,7 @@ public abstract class Job implements Delayed {
 
     @Override
     public long getDelay(TimeUnit unit) {
-        return unit.convert(this.getDelayStrategy().next()-System.currentTimeMillis(), TimeUnit.MILLISECONDS);
+        return unit.convert(this.getDelayStrategy().next() - System.currentTimeMillis(), TimeUnit.MILLISECONDS);
     }
 
     @Override

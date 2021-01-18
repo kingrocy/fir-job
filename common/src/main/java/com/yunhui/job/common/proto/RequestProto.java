@@ -4,2011 +4,2195 @@
 package com.yunhui.job.common.proto;
 
 public final class RequestProto {
-  private RequestProto() {}
-  public static void registerAllExtensions(
-      com.google.protobuf.ExtensionRegistryLite registry) {
-  }
+    private RequestProto() {
+    }
 
-  public static void registerAllExtensions(
-      com.google.protobuf.ExtensionRegistry registry) {
-    registerAllExtensions(
-        (com.google.protobuf.ExtensionRegistryLite) registry);
-  }
-  /**
-   * Protobuf enum {@code com.yunhui.job.common.proto.Status}
-   */
-  public enum Status
-      implements com.google.protobuf.ProtocolMessageEnum {
-    /**
-     * <code>SUCCESS = 0;</code>
-     */
-    SUCCESS(0),
-    /**
-     * <code>ERROR = 1;</code>
-     */
-    ERROR(1),
-    UNRECOGNIZED(-1),
-    ;
+    public static void registerAllExtensions(
+            com.google.protobuf.ExtensionRegistryLite registry) {
+    }
 
-    /**
-     * <code>SUCCESS = 0;</code>
-     */
-    public static final int SUCCESS_VALUE = 0;
-    /**
-     * <code>ERROR = 1;</code>
-     */
-    public static final int ERROR_VALUE = 1;
-
-
-    public final int getNumber() {
-      if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalArgumentException(
-            "Can't get the number of an unknown enum value.");
-      }
-      return value;
+    public static void registerAllExtensions(
+            com.google.protobuf.ExtensionRegistry registry) {
+        registerAllExtensions(
+                (com.google.protobuf.ExtensionRegistryLite) registry);
     }
 
     /**
-     * @param value The numeric wire value of the corresponding enum entry.
-     * @return The enum associated with the given numeric wire value.
-     * @deprecated Use {@link #forNumber(int)} instead.
+     * Protobuf enum {@code com.yunhui.job.common.proto.Status}
      */
-    @java.lang.Deprecated
-    public static Status valueOf(int value) {
-      return forNumber(value);
-    }
+    public enum Status
+            implements com.google.protobuf.ProtocolMessageEnum {
+        /**
+         * <code>SUCCESS = 0;</code>
+         */
+        SUCCESS(0),
+        /**
+         * <code>ERROR = 1;</code>
+         */
+        ERROR(1),
+        UNRECOGNIZED(-1),
+        ;
 
-    /**
-     * @param value The numeric wire value of the corresponding enum entry.
-     * @return The enum associated with the given numeric wire value.
-     */
-    public static Status forNumber(int value) {
-      switch (value) {
-        case 0: return SUCCESS;
-        case 1: return ERROR;
-        default: return null;
-      }
-    }
+        /**
+         * <code>SUCCESS = 0;</code>
+         */
+        public static final int SUCCESS_VALUE = 0;
+        /**
+         * <code>ERROR = 1;</code>
+         */
+        public static final int ERROR_VALUE = 1;
 
-    public static com.google.protobuf.Internal.EnumLiteMap<Status>
-        internalGetValueMap() {
-      return internalValueMap;
-    }
-    private static final com.google.protobuf.Internal.EnumLiteMap<
-        Status> internalValueMap =
-          new com.google.protobuf.Internal.EnumLiteMap<Status>() {
-            public Status findValueByNumber(int number) {
-              return Status.forNumber(number);
+
+        public final int getNumber() {
+            if (this == UNRECOGNIZED) {
+                throw new java.lang.IllegalArgumentException(
+                        "Can't get the number of an unknown enum value.");
             }
-          };
+            return value;
+        }
 
-    public final com.google.protobuf.Descriptors.EnumValueDescriptor
-        getValueDescriptor() {
-      return getDescriptor().getValues().get(ordinal());
-    }
-    public final com.google.protobuf.Descriptors.EnumDescriptor
-        getDescriptorForType() {
-      return getDescriptor();
-    }
-    public static final com.google.protobuf.Descriptors.EnumDescriptor
-        getDescriptor() {
-      return com.yunhui.job.common.proto.RequestProto.getDescriptor().getEnumTypes().get(0);
-    }
+        /**
+         * @param value The numeric wire value of the corresponding enum entry.
+         * @return The enum associated with the given numeric wire value.
+         * @deprecated Use {@link #forNumber(int)} instead.
+         */
+        @java.lang.Deprecated
+        public static Status valueOf(int value) {
+            return forNumber(value);
+        }
 
-    private static final Status[] VALUES = values();
-
-    public static Status valueOf(
-        com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
-      if (desc.getType() != getDescriptor()) {
-        throw new java.lang.IllegalArgumentException(
-          "EnumValueDescriptor is not for this type.");
-      }
-      if (desc.getIndex() == -1) {
-        return UNRECOGNIZED;
-      }
-      return VALUES[desc.getIndex()];
-    }
-
-    private final int value;
-
-    private Status(int value) {
-      this.value = value;
-    }
-
-    // @@protoc_insertion_point(enum_scope:com.yunhui.job.common.proto.Status)
-  }
-
-  /**
-   * Protobuf enum {@code com.yunhui.job.common.proto.Type}
-   */
-  public enum Type
-      implements com.google.protobuf.ProtocolMessageEnum {
-    /**
-     * <code>PING = 0;</code>
-     */
-    PING(0),
-    /**
-     * <code>PONG = 1;</code>
-     */
-    PONG(1),
-    /**
-     * <code>REQUEST = 2;</code>
-     */
-    REQUEST(2),
-    /**
-     * <code>RESPONSE = 3;</code>
-     */
-    RESPONSE(3),
-    /**
-     * <code>REGISTER = 4;</code>
-     */
-    REGISTER(4),
-    UNRECOGNIZED(-1),
-    ;
-
-    /**
-     * <code>PING = 0;</code>
-     */
-    public static final int PING_VALUE = 0;
-    /**
-     * <code>PONG = 1;</code>
-     */
-    public static final int PONG_VALUE = 1;
-    /**
-     * <code>REQUEST = 2;</code>
-     */
-    public static final int REQUEST_VALUE = 2;
-    /**
-     * <code>RESPONSE = 3;</code>
-     */
-    public static final int RESPONSE_VALUE = 3;
-    /**
-     * <code>REGISTER = 4;</code>
-     */
-    public static final int REGISTER_VALUE = 4;
-
-
-    public final int getNumber() {
-      if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalArgumentException(
-            "Can't get the number of an unknown enum value.");
-      }
-      return value;
-    }
-
-    /**
-     * @param value The numeric wire value of the corresponding enum entry.
-     * @return The enum associated with the given numeric wire value.
-     * @deprecated Use {@link #forNumber(int)} instead.
-     */
-    @java.lang.Deprecated
-    public static Type valueOf(int value) {
-      return forNumber(value);
-    }
-
-    /**
-     * @param value The numeric wire value of the corresponding enum entry.
-     * @return The enum associated with the given numeric wire value.
-     */
-    public static Type forNumber(int value) {
-      switch (value) {
-        case 0: return PING;
-        case 1: return PONG;
-        case 2: return REQUEST;
-        case 3: return RESPONSE;
-        case 4: return REGISTER;
-        default: return null;
-      }
-    }
-
-    public static com.google.protobuf.Internal.EnumLiteMap<Type>
-        internalGetValueMap() {
-      return internalValueMap;
-    }
-    private static final com.google.protobuf.Internal.EnumLiteMap<
-        Type> internalValueMap =
-          new com.google.protobuf.Internal.EnumLiteMap<Type>() {
-            public Type findValueByNumber(int number) {
-              return Type.forNumber(number);
+        /**
+         * @param value The numeric wire value of the corresponding enum entry.
+         * @return The enum associated with the given numeric wire value.
+         */
+        public static Status forNumber(int value) {
+            switch (value) {
+                case 0:
+                    return SUCCESS;
+                case 1:
+                    return ERROR;
+                default:
+                    return null;
             }
-          };
+        }
 
-    public final com.google.protobuf.Descriptors.EnumValueDescriptor
+        public static com.google.protobuf.Internal.EnumLiteMap<Status>
+        internalGetValueMap() {
+            return internalValueMap;
+        }
+
+        private static final com.google.protobuf.Internal.EnumLiteMap<
+                Status> internalValueMap =
+                new com.google.protobuf.Internal.EnumLiteMap<Status>() {
+                    public Status findValueByNumber(int number) {
+                        return Status.forNumber(number);
+                    }
+                };
+
+        public final com.google.protobuf.Descriptors.EnumValueDescriptor
         getValueDescriptor() {
-      return getDescriptor().getValues().get(ordinal());
-    }
-    public final com.google.protobuf.Descriptors.EnumDescriptor
+            return getDescriptor().getValues().get(ordinal());
+        }
+
+        public final com.google.protobuf.Descriptors.EnumDescriptor
         getDescriptorForType() {
-      return getDescriptor();
-    }
-    public static final com.google.protobuf.Descriptors.EnumDescriptor
+            return getDescriptor();
+        }
+
+        public static final com.google.protobuf.Descriptors.EnumDescriptor
         getDescriptor() {
-      return com.yunhui.job.common.proto.RequestProto.getDescriptor().getEnumTypes().get(1);
+            return com.yunhui.job.common.proto.RequestProto.getDescriptor().getEnumTypes().get(0);
+        }
+
+        private static final Status[] VALUES = values();
+
+        public static Status valueOf(
+                com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+            if (desc.getType() != getDescriptor()) {
+                throw new java.lang.IllegalArgumentException(
+                        "EnumValueDescriptor is not for this type.");
+            }
+            if (desc.getIndex() == -1) {
+                return UNRECOGNIZED;
+            }
+            return VALUES[desc.getIndex()];
+        }
+
+        private final int value;
+
+        private Status(int value) {
+            this.value = value;
+        }
+
+        // @@protoc_insertion_point(enum_scope:com.yunhui.job.common.proto.Status)
     }
 
-    private static final Type[] VALUES = values();
+    /**
+     * Protobuf enum {@code com.yunhui.job.common.proto.Type}
+     */
+    public enum Type
+            implements com.google.protobuf.ProtocolMessageEnum {
+        /**
+         * <code>PING = 0;</code>
+         */
+        PING(0),
+        /**
+         * <code>PONG = 1;</code>
+         */
+        PONG(1),
+        /**
+         * <code>REQUEST = 2;</code>
+         */
+        REQUEST(2),
+        /**
+         * <code>RESPONSE = 3;</code>
+         */
+        RESPONSE(3),
+        /**
+         * <code>REGISTER = 4;</code>
+         */
+        REGISTER(4),
+        UNRECOGNIZED(-1),
+        ;
 
-    public static Type valueOf(
-        com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
-      if (desc.getType() != getDescriptor()) {
-        throw new java.lang.IllegalArgumentException(
-          "EnumValueDescriptor is not for this type.");
-      }
-      if (desc.getIndex() == -1) {
-        return UNRECOGNIZED;
-      }
-      return VALUES[desc.getIndex()];
+        /**
+         * <code>PING = 0;</code>
+         */
+        public static final int PING_VALUE = 0;
+        /**
+         * <code>PONG = 1;</code>
+         */
+        public static final int PONG_VALUE = 1;
+        /**
+         * <code>REQUEST = 2;</code>
+         */
+        public static final int REQUEST_VALUE = 2;
+        /**
+         * <code>RESPONSE = 3;</code>
+         */
+        public static final int RESPONSE_VALUE = 3;
+        /**
+         * <code>REGISTER = 4;</code>
+         */
+        public static final int REGISTER_VALUE = 4;
+
+
+        public final int getNumber() {
+            if (this == UNRECOGNIZED) {
+                throw new java.lang.IllegalArgumentException(
+                        "Can't get the number of an unknown enum value.");
+            }
+            return value;
+        }
+
+        /**
+         * @param value The numeric wire value of the corresponding enum entry.
+         * @return The enum associated with the given numeric wire value.
+         * @deprecated Use {@link #forNumber(int)} instead.
+         */
+        @java.lang.Deprecated
+        public static Type valueOf(int value) {
+            return forNumber(value);
+        }
+
+        /**
+         * @param value The numeric wire value of the corresponding enum entry.
+         * @return The enum associated with the given numeric wire value.
+         */
+        public static Type forNumber(int value) {
+            switch (value) {
+                case 0:
+                    return PING;
+                case 1:
+                    return PONG;
+                case 2:
+                    return REQUEST;
+                case 3:
+                    return RESPONSE;
+                case 4:
+                    return REGISTER;
+                default:
+                    return null;
+            }
+        }
+
+        public static com.google.protobuf.Internal.EnumLiteMap<Type>
+        internalGetValueMap() {
+            return internalValueMap;
+        }
+
+        private static final com.google.protobuf.Internal.EnumLiteMap<
+                Type> internalValueMap =
+                new com.google.protobuf.Internal.EnumLiteMap<Type>() {
+                    public Type findValueByNumber(int number) {
+                        return Type.forNumber(number);
+                    }
+                };
+
+        public final com.google.protobuf.Descriptors.EnumValueDescriptor
+        getValueDescriptor() {
+            return getDescriptor().getValues().get(ordinal());
+        }
+
+        public final com.google.protobuf.Descriptors.EnumDescriptor
+        getDescriptorForType() {
+            return getDescriptor();
+        }
+
+        public static final com.google.protobuf.Descriptors.EnumDescriptor
+        getDescriptor() {
+            return com.yunhui.job.common.proto.RequestProto.getDescriptor().getEnumTypes().get(1);
+        }
+
+        private static final Type[] VALUES = values();
+
+        public static Type valueOf(
+                com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+            if (desc.getType() != getDescriptor()) {
+                throw new java.lang.IllegalArgumentException(
+                        "EnumValueDescriptor is not for this type.");
+            }
+            if (desc.getIndex() == -1) {
+                return UNRECOGNIZED;
+            }
+            return VALUES[desc.getIndex()];
+        }
+
+        private final int value;
+
+        private Type(int value) {
+            this.value = value;
+        }
+
+        // @@protoc_insertion_point(enum_scope:com.yunhui.job.common.proto.Type)
     }
 
-    private final int value;
+    public interface RequestOrBuilder extends
+            // @@protoc_insertion_point(interface_extends:com.yunhui.job.common.proto.Request)
+            com.google.protobuf.MessageOrBuilder {
 
-    private Type(int value) {
-      this.value = value;
-    }
+        /**
+         * <code>.com.yunhui.job.common.proto.Type type = 1;</code>
+         *
+         * @return The enum numeric value on the wire for type.
+         */
+        int getTypeValue();
 
-    // @@protoc_insertion_point(enum_scope:com.yunhui.job.common.proto.Type)
-  }
+        /**
+         * <code>.com.yunhui.job.common.proto.Type type = 1;</code>
+         *
+         * @return The type.
+         */
+        com.yunhui.job.common.proto.RequestProto.Type getType();
 
-  public interface RequestOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:com.yunhui.job.common.proto.Request)
-      com.google.protobuf.MessageOrBuilder {
+        /**
+         * <code>.com.yunhui.job.common.proto.Status status = 2;</code>
+         *
+         * @return The enum numeric value on the wire for status.
+         */
+        int getStatusValue();
 
-    /**
-     * <code>.com.yunhui.job.common.proto.Type type = 1;</code>
-     * @return The enum numeric value on the wire for type.
-     */
-    int getTypeValue();
-    /**
-     * <code>.com.yunhui.job.common.proto.Type type = 1;</code>
-     * @return The type.
-     */
-    com.yunhui.job.common.proto.RequestProto.Type getType();
+        /**
+         * <code>.com.yunhui.job.common.proto.Status status = 2;</code>
+         *
+         * @return The status.
+         */
+        com.yunhui.job.common.proto.RequestProto.Status getStatus();
 
-    /**
-     * <code>.com.yunhui.job.common.proto.Status status = 2;</code>
-     * @return The enum numeric value on the wire for status.
-     */
-    int getStatusValue();
-    /**
-     * <code>.com.yunhui.job.common.proto.Status status = 2;</code>
-     * @return The status.
-     */
-    com.yunhui.job.common.proto.RequestProto.Status getStatus();
-
-    /**
-     * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
-     */
-    java.util.List<com.yunhui.job.common.proto.RequestProto.Param> 
+        /**
+         * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
+         */
+        java.util.List<com.yunhui.job.common.proto.RequestProto.Param>
         getParamsList();
-    /**
-     * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
-     */
-    com.yunhui.job.common.proto.RequestProto.Param getParams(int index);
-    /**
-     * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
-     */
-    int getParamsCount();
-    /**
-     * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
-     */
-    java.util.List<? extends com.yunhui.job.common.proto.RequestProto.ParamOrBuilder> 
+
+        /**
+         * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
+         */
+        com.yunhui.job.common.proto.RequestProto.Param getParams(int index);
+
+        /**
+         * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
+         */
+        int getParamsCount();
+
+        /**
+         * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
+         */
+        java.util.List<? extends com.yunhui.job.common.proto.RequestProto.ParamOrBuilder>
         getParamsOrBuilderList();
-    /**
-     * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
-     */
-    com.yunhui.job.common.proto.RequestProto.ParamOrBuilder getParamsOrBuilder(
-        int index);
-  }
-  /**
-   * Protobuf type {@code com.yunhui.job.common.proto.Request}
-   */
-  public  static final class Request extends
-      com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:com.yunhui.job.common.proto.Request)
-      RequestOrBuilder {
-  private static final long serialVersionUID = 0L;
-    // Use Request.newBuilder() to construct.
-    private Request(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
-      super(builder);
-    }
-    private Request() {
-      type_ = 0;
-      status_ = 0;
-      params_ = java.util.Collections.emptyList();
+
+        /**
+         * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
+         */
+        com.yunhui.job.common.proto.RequestProto.ParamOrBuilder getParamsOrBuilder(
+                int index);
     }
 
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-        UnusedPrivateParameter unused) {
-      return new Request();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private Request(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 8: {
-              int rawValue = input.readEnum();
-
-              type_ = rawValue;
-              break;
-            }
-            case 16: {
-              int rawValue = input.readEnum();
-
-              status_ = rawValue;
-              break;
-            }
-            case 26: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                params_ = new java.util.ArrayList<com.yunhui.job.common.proto.RequestProto.Param>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              params_.add(
-                  input.readMessage(com.yunhui.job.common.proto.RequestProto.Param.parser(), extensionRegistry));
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          params_ = java.util.Collections.unmodifiableList(params_);
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return com.yunhui.job.common.proto.RequestProto.internal_static_com_yunhui_job_common_proto_Request_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return com.yunhui.job.common.proto.RequestProto.internal_static_com_yunhui_job_common_proto_Request_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              com.yunhui.job.common.proto.RequestProto.Request.class, com.yunhui.job.common.proto.RequestProto.Request.Builder.class);
-    }
-
-    public static final int TYPE_FIELD_NUMBER = 1;
-    private int type_;
-    /**
-     * <code>.com.yunhui.job.common.proto.Type type = 1;</code>
-     * @return The enum numeric value on the wire for type.
-     */
-    public int getTypeValue() {
-      return type_;
-    }
-    /**
-     * <code>.com.yunhui.job.common.proto.Type type = 1;</code>
-     * @return The type.
-     */
-    public com.yunhui.job.common.proto.RequestProto.Type getType() {
-      @SuppressWarnings("deprecation")
-      com.yunhui.job.common.proto.RequestProto.Type result = com.yunhui.job.common.proto.RequestProto.Type.valueOf(type_);
-      return result == null ? com.yunhui.job.common.proto.RequestProto.Type.UNRECOGNIZED : result;
-    }
-
-    public static final int STATUS_FIELD_NUMBER = 2;
-    private int status_;
-    /**
-     * <code>.com.yunhui.job.common.proto.Status status = 2;</code>
-     * @return The enum numeric value on the wire for status.
-     */
-    public int getStatusValue() {
-      return status_;
-    }
-    /**
-     * <code>.com.yunhui.job.common.proto.Status status = 2;</code>
-     * @return The status.
-     */
-    public com.yunhui.job.common.proto.RequestProto.Status getStatus() {
-      @SuppressWarnings("deprecation")
-      com.yunhui.job.common.proto.RequestProto.Status result = com.yunhui.job.common.proto.RequestProto.Status.valueOf(status_);
-      return result == null ? com.yunhui.job.common.proto.RequestProto.Status.UNRECOGNIZED : result;
-    }
-
-    public static final int PARAMS_FIELD_NUMBER = 3;
-    private java.util.List<com.yunhui.job.common.proto.RequestProto.Param> params_;
-    /**
-     * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
-     */
-    public java.util.List<com.yunhui.job.common.proto.RequestProto.Param> getParamsList() {
-      return params_;
-    }
-    /**
-     * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
-     */
-    public java.util.List<? extends com.yunhui.job.common.proto.RequestProto.ParamOrBuilder> 
-        getParamsOrBuilderList() {
-      return params_;
-    }
-    /**
-     * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
-     */
-    public int getParamsCount() {
-      return params_.size();
-    }
-    /**
-     * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
-     */
-    public com.yunhui.job.common.proto.RequestProto.Param getParams(int index) {
-      return params_.get(index);
-    }
-    /**
-     * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
-     */
-    public com.yunhui.job.common.proto.RequestProto.ParamOrBuilder getParamsOrBuilder(
-        int index) {
-      return params_.get(index);
-    }
-
-    private byte memoizedIsInitialized = -1;
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
-      if (type_ != com.yunhui.job.common.proto.RequestProto.Type.PING.getNumber()) {
-        output.writeEnum(1, type_);
-      }
-      if (status_ != com.yunhui.job.common.proto.RequestProto.Status.SUCCESS.getNumber()) {
-        output.writeEnum(2, status_);
-      }
-      for (int i = 0; i < params_.size(); i++) {
-        output.writeMessage(3, params_.get(i));
-      }
-      unknownFields.writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (type_ != com.yunhui.job.common.proto.RequestProto.Type.PING.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(1, type_);
-      }
-      if (status_ != com.yunhui.job.common.proto.RequestProto.Status.SUCCESS.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(2, status_);
-      }
-      for (int i = 0; i < params_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, params_.get(i));
-      }
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-       return true;
-      }
-      if (!(obj instanceof com.yunhui.job.common.proto.RequestProto.Request)) {
-        return super.equals(obj);
-      }
-      com.yunhui.job.common.proto.RequestProto.Request other = (com.yunhui.job.common.proto.RequestProto.Request) obj;
-
-      if (type_ != other.type_) return false;
-      if (status_ != other.status_) return false;
-      if (!getParamsList()
-          .equals(other.getParamsList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + type_;
-      hash = (37 * hash) + STATUS_FIELD_NUMBER;
-      hash = (53 * hash) + status_;
-      if (getParamsCount() > 0) {
-        hash = (37 * hash) + PARAMS_FIELD_NUMBER;
-        hash = (53 * hash) + getParamsList().hashCode();
-      }
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
-    }
-
-    public static com.yunhui.job.common.proto.RequestProto.Request parseFrom(
-        java.nio.ByteBuffer data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static com.yunhui.job.common.proto.RequestProto.Request parseFrom(
-        java.nio.ByteBuffer data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static com.yunhui.job.common.proto.RequestProto.Request parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static com.yunhui.job.common.proto.RequestProto.Request parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static com.yunhui.job.common.proto.RequestProto.Request parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static com.yunhui.job.common.proto.RequestProto.Request parseFrom(
-        byte[] data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static com.yunhui.job.common.proto.RequestProto.Request parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input);
-    }
-    public static com.yunhui.job.common.proto.RequestProto.Request parseFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
-    }
-    public static com.yunhui.job.common.proto.RequestProto.Request parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input);
-    }
-    public static com.yunhui.job.common.proto.RequestProto.Request parseDelimitedFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
-    }
-    public static com.yunhui.job.common.proto.RequestProto.Request parseFrom(
-        com.google.protobuf.CodedInputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input);
-    }
-    public static com.yunhui.job.common.proto.RequestProto.Request parseFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
-    }
-
-    @java.lang.Override
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder() {
-      return DEFAULT_INSTANCE.toBuilder();
-    }
-    public static Builder newBuilder(com.yunhui.job.common.proto.RequestProto.Request prototype) {
-      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-    }
-    @java.lang.Override
-    public Builder toBuilder() {
-      return this == DEFAULT_INSTANCE
-          ? new Builder() : new Builder().mergeFrom(this);
-    }
-
-    @java.lang.Override
-    protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
-    }
     /**
      * Protobuf type {@code com.yunhui.job.common.proto.Request}
      */
-    public static final class Builder extends
-        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:com.yunhui.job.common.proto.Request)
-        com.yunhui.job.common.proto.RequestProto.RequestOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return com.yunhui.job.common.proto.RequestProto.internal_static_com_yunhui_job_common_proto_Request_descriptor;
-      }
+    public static final class Request extends
+            com.google.protobuf.GeneratedMessageV3 implements
+            // @@protoc_insertion_point(message_implements:com.yunhui.job.common.proto.Request)
+            RequestOrBuilder {
+        private static final long serialVersionUID = 0L;
 
-      @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return com.yunhui.job.common.proto.RequestProto.internal_static_com_yunhui_job_common_proto_Request_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                com.yunhui.job.common.proto.RequestProto.Request.class, com.yunhui.job.common.proto.RequestProto.Request.Builder.class);
-      }
-
-      // Construct using com.yunhui.job.common.proto.RequestProto.Request.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-          getParamsFieldBuilder();
+        // Use Request.newBuilder() to construct.
+        private Request(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+            super(builder);
         }
-      }
-      @java.lang.Override
-      public Builder clear() {
-        super.clear();
-        type_ = 0;
 
-        status_ = 0;
-
-        if (paramsBuilder_ == null) {
-          params_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
-        } else {
-          paramsBuilder_.clear();
+        private Request() {
+            type_ = 0;
+            status_ = 0;
+            params_ = java.util.Collections.emptyList();
         }
-        return this;
-      }
 
-      @java.lang.Override
-      public com.google.protobuf.Descriptors.Descriptor
-          getDescriptorForType() {
-        return com.yunhui.job.common.proto.RequestProto.internal_static_com_yunhui_job_common_proto_Request_descriptor;
-      }
-
-      @java.lang.Override
-      public com.yunhui.job.common.proto.RequestProto.Request getDefaultInstanceForType() {
-        return com.yunhui.job.common.proto.RequestProto.Request.getDefaultInstance();
-      }
-
-      @java.lang.Override
-      public com.yunhui.job.common.proto.RequestProto.Request build() {
-        com.yunhui.job.common.proto.RequestProto.Request result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(result);
+        @java.lang.Override
+        @SuppressWarnings({"unused"})
+        protected java.lang.Object newInstance(
+                UnusedPrivateParameter unused) {
+            return new Request();
         }
-        return result;
-      }
 
-      @java.lang.Override
-      public com.yunhui.job.common.proto.RequestProto.Request buildPartial() {
-        com.yunhui.job.common.proto.RequestProto.Request result = new com.yunhui.job.common.proto.RequestProto.Request(this);
-        int from_bitField0_ = bitField0_;
-        result.type_ = type_;
-        result.status_ = status_;
-        if (paramsBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0)) {
-            params_ = java.util.Collections.unmodifiableList(params_);
-            bitField0_ = (bitField0_ & ~0x00000001);
-          }
-          result.params_ = params_;
-        } else {
-          result.params_ = paramsBuilder_.build();
+        @java.lang.Override
+        public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+            return this.unknownFields;
         }
-        onBuilt();
-        return result;
-      }
 
-      @java.lang.Override
-      public Builder clone() {
-        return super.clone();
-      }
-      @java.lang.Override
-      public Builder setField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
-        return super.setField(field, value);
-      }
-      @java.lang.Override
-      public Builder clearField(
-          com.google.protobuf.Descriptors.FieldDescriptor field) {
-        return super.clearField(field);
-      }
-      @java.lang.Override
-      public Builder clearOneof(
-          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-        return super.clearOneof(oneof);
-      }
-      @java.lang.Override
-      public Builder setRepeatedField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, java.lang.Object value) {
-        return super.setRepeatedField(field, index, value);
-      }
-      @java.lang.Override
-      public Builder addRepeatedField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
-        return super.addRepeatedField(field, value);
-      }
-      @java.lang.Override
-      public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.yunhui.job.common.proto.RequestProto.Request) {
-          return mergeFrom((com.yunhui.job.common.proto.RequestProto.Request)other);
-        } else {
-          super.mergeFrom(other);
-          return this;
-        }
-      }
-
-      public Builder mergeFrom(com.yunhui.job.common.proto.RequestProto.Request other) {
-        if (other == com.yunhui.job.common.proto.RequestProto.Request.getDefaultInstance()) return this;
-        if (other.type_ != 0) {
-          setTypeValue(other.getTypeValue());
-        }
-        if (other.status_ != 0) {
-          setStatusValue(other.getStatusValue());
-        }
-        if (paramsBuilder_ == null) {
-          if (!other.params_.isEmpty()) {
-            if (params_.isEmpty()) {
-              params_ = other.params_;
-              bitField0_ = (bitField0_ & ~0x00000001);
-            } else {
-              ensureParamsIsMutable();
-              params_.addAll(other.params_);
+        private Request(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            this();
+            if (extensionRegistry == null) {
+                throw new java.lang.NullPointerException();
             }
-            onChanged();
-          }
-        } else {
-          if (!other.params_.isEmpty()) {
-            if (paramsBuilder_.isEmpty()) {
-              paramsBuilder_.dispose();
-              paramsBuilder_ = null;
-              params_ = other.params_;
-              bitField0_ = (bitField0_ & ~0x00000001);
-              paramsBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getParamsFieldBuilder() : null;
-            } else {
-              paramsBuilder_.addAllMessages(other.params_);
+            int mutable_bitField0_ = 0;
+            com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+                    com.google.protobuf.UnknownFieldSet.newBuilder();
+            try {
+                boolean done = false;
+                while (!done) {
+                    int tag = input.readTag();
+                    switch (tag) {
+                        case 0:
+                            done = true;
+                            break;
+                        case 8: {
+                            int rawValue = input.readEnum();
+
+                            type_ = rawValue;
+                            break;
+                        }
+                        case 16: {
+                            int rawValue = input.readEnum();
+
+                            status_ = rawValue;
+                            break;
+                        }
+                        case 26: {
+                            if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                                params_ = new java.util.ArrayList<com.yunhui.job.common.proto.RequestProto.Param>();
+                                mutable_bitField0_ |= 0x00000001;
+                            }
+                            params_.add(
+                                    input.readMessage(com.yunhui.job.common.proto.RequestProto.Param.parser(), extensionRegistry));
+                            break;
+                        }
+                        default: {
+                            if (!parseUnknownField(
+                                    input, unknownFields, extensionRegistry, tag)) {
+                                done = true;
+                            }
+                            break;
+                        }
+                    }
+                }
+            } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                throw e.setUnfinishedMessage(this);
+            } catch (java.io.IOException e) {
+                throw new com.google.protobuf.InvalidProtocolBufferException(
+                        e).setUnfinishedMessage(this);
+            } finally {
+                if (((mutable_bitField0_ & 0x00000001) != 0)) {
+                    params_ = java.util.Collections.unmodifiableList(params_);
+                }
+                this.unknownFields = unknownFields.build();
+                makeExtensionsImmutable();
             }
-          }
         }
-        this.mergeUnknownFields(other.unknownFields);
-        onChanged();
-        return this;
-      }
 
-      @java.lang.Override
-      public final boolean isInitialized() {
-        return true;
-      }
+        public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+            return com.yunhui.job.common.proto.RequestProto.internal_static_com_yunhui_job_common_proto_Request_descriptor;
+        }
 
-      @java.lang.Override
-      public Builder mergeFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        com.yunhui.job.common.proto.RequestProto.Request parsedMessage = null;
-        try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.yunhui.job.common.proto.RequestProto.Request) e.getUnfinishedMessage();
-          throw e.unwrapIOException();
-        } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
+        @java.lang.Override
+        protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+            return com.yunhui.job.common.proto.RequestProto.internal_static_com_yunhui_job_common_proto_Request_fieldAccessorTable
+                    .ensureFieldAccessorsInitialized(
+                            com.yunhui.job.common.proto.RequestProto.Request.class, com.yunhui.job.common.proto.RequestProto.Request.Builder.class);
         }
-        return this;
-      }
-      private int bitField0_;
 
-      private int type_ = 0;
-      /**
-       * <code>.com.yunhui.job.common.proto.Type type = 1;</code>
-       * @return The enum numeric value on the wire for type.
-       */
-      public int getTypeValue() {
-        return type_;
-      }
-      /**
-       * <code>.com.yunhui.job.common.proto.Type type = 1;</code>
-       * @param value The enum numeric value on the wire for type to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTypeValue(int value) {
-        type_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.com.yunhui.job.common.proto.Type type = 1;</code>
-       * @return The type.
-       */
-      public com.yunhui.job.common.proto.RequestProto.Type getType() {
-        @SuppressWarnings("deprecation")
-        com.yunhui.job.common.proto.RequestProto.Type result = com.yunhui.job.common.proto.RequestProto.Type.valueOf(type_);
-        return result == null ? com.yunhui.job.common.proto.RequestProto.Type.UNRECOGNIZED : result;
-      }
-      /**
-       * <code>.com.yunhui.job.common.proto.Type type = 1;</code>
-       * @param value The type to set.
-       * @return This builder for chaining.
-       */
-      public Builder setType(com.yunhui.job.common.proto.RequestProto.Type value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        
-        type_ = value.getNumber();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.com.yunhui.job.common.proto.Type type = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearType() {
-        
-        type_ = 0;
-        onChanged();
-        return this;
-      }
+        public static final int TYPE_FIELD_NUMBER = 1;
+        private int type_;
 
-      private int status_ = 0;
-      /**
-       * <code>.com.yunhui.job.common.proto.Status status = 2;</code>
-       * @return The enum numeric value on the wire for status.
-       */
-      public int getStatusValue() {
-        return status_;
-      }
-      /**
-       * <code>.com.yunhui.job.common.proto.Status status = 2;</code>
-       * @param value The enum numeric value on the wire for status to set.
-       * @return This builder for chaining.
-       */
-      public Builder setStatusValue(int value) {
-        status_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.com.yunhui.job.common.proto.Status status = 2;</code>
-       * @return The status.
-       */
-      public com.yunhui.job.common.proto.RequestProto.Status getStatus() {
-        @SuppressWarnings("deprecation")
-        com.yunhui.job.common.proto.RequestProto.Status result = com.yunhui.job.common.proto.RequestProto.Status.valueOf(status_);
-        return result == null ? com.yunhui.job.common.proto.RequestProto.Status.UNRECOGNIZED : result;
-      }
-      /**
-       * <code>.com.yunhui.job.common.proto.Status status = 2;</code>
-       * @param value The status to set.
-       * @return This builder for chaining.
-       */
-      public Builder setStatus(com.yunhui.job.common.proto.RequestProto.Status value) {
-        if (value == null) {
-          throw new NullPointerException();
+        /**
+         * <code>.com.yunhui.job.common.proto.Type type = 1;</code>
+         *
+         * @return The enum numeric value on the wire for type.
+         */
+        public int getTypeValue() {
+            return type_;
         }
-        
-        status_ = value.getNumber();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.com.yunhui.job.common.proto.Status status = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearStatus() {
-        
-        status_ = 0;
-        onChanged();
-        return this;
-      }
 
-      private java.util.List<com.yunhui.job.common.proto.RequestProto.Param> params_ =
-        java.util.Collections.emptyList();
-      private void ensureParamsIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          params_ = new java.util.ArrayList<com.yunhui.job.common.proto.RequestProto.Param>(params_);
-          bitField0_ |= 0x00000001;
-         }
-      }
+        /**
+         * <code>.com.yunhui.job.common.proto.Type type = 1;</code>
+         *
+         * @return The type.
+         */
+        public com.yunhui.job.common.proto.RequestProto.Type getType() {
+            @SuppressWarnings("deprecation")
+            com.yunhui.job.common.proto.RequestProto.Type result = com.yunhui.job.common.proto.RequestProto.Type.valueOf(type_);
+            return result == null ? com.yunhui.job.common.proto.RequestProto.Type.UNRECOGNIZED : result;
+        }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.yunhui.job.common.proto.RequestProto.Param, com.yunhui.job.common.proto.RequestProto.Param.Builder, com.yunhui.job.common.proto.RequestProto.ParamOrBuilder> paramsBuilder_;
+        public static final int STATUS_FIELD_NUMBER = 2;
+        private int status_;
 
-      /**
-       * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
-       */
-      public java.util.List<com.yunhui.job.common.proto.RequestProto.Param> getParamsList() {
-        if (paramsBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(params_);
-        } else {
-          return paramsBuilder_.getMessageList();
+        /**
+         * <code>.com.yunhui.job.common.proto.Status status = 2;</code>
+         *
+         * @return The enum numeric value on the wire for status.
+         */
+        public int getStatusValue() {
+            return status_;
         }
-      }
-      /**
-       * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
-       */
-      public int getParamsCount() {
-        if (paramsBuilder_ == null) {
-          return params_.size();
-        } else {
-          return paramsBuilder_.getCount();
-        }
-      }
-      /**
-       * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
-       */
-      public com.yunhui.job.common.proto.RequestProto.Param getParams(int index) {
-        if (paramsBuilder_ == null) {
-          return params_.get(index);
-        } else {
-          return paramsBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
-       */
-      public Builder setParams(
-          int index, com.yunhui.job.common.proto.RequestProto.Param value) {
-        if (paramsBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureParamsIsMutable();
-          params_.set(index, value);
-          onChanged();
-        } else {
-          paramsBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
-       */
-      public Builder setParams(
-          int index, com.yunhui.job.common.proto.RequestProto.Param.Builder builderForValue) {
-        if (paramsBuilder_ == null) {
-          ensureParamsIsMutable();
-          params_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          paramsBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
-       */
-      public Builder addParams(com.yunhui.job.common.proto.RequestProto.Param value) {
-        if (paramsBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureParamsIsMutable();
-          params_.add(value);
-          onChanged();
-        } else {
-          paramsBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
-       */
-      public Builder addParams(
-          int index, com.yunhui.job.common.proto.RequestProto.Param value) {
-        if (paramsBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureParamsIsMutable();
-          params_.add(index, value);
-          onChanged();
-        } else {
-          paramsBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
-       */
-      public Builder addParams(
-          com.yunhui.job.common.proto.RequestProto.Param.Builder builderForValue) {
-        if (paramsBuilder_ == null) {
-          ensureParamsIsMutable();
-          params_.add(builderForValue.build());
-          onChanged();
-        } else {
-          paramsBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
-       */
-      public Builder addParams(
-          int index, com.yunhui.job.common.proto.RequestProto.Param.Builder builderForValue) {
-        if (paramsBuilder_ == null) {
-          ensureParamsIsMutable();
-          params_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          paramsBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
-       */
-      public Builder addAllParams(
-          java.lang.Iterable<? extends com.yunhui.job.common.proto.RequestProto.Param> values) {
-        if (paramsBuilder_ == null) {
-          ensureParamsIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, params_);
-          onChanged();
-        } else {
-          paramsBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
-       */
-      public Builder clearParams() {
-        if (paramsBuilder_ == null) {
-          params_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
-          onChanged();
-        } else {
-          paramsBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
-       */
-      public Builder removeParams(int index) {
-        if (paramsBuilder_ == null) {
-          ensureParamsIsMutable();
-          params_.remove(index);
-          onChanged();
-        } else {
-          paramsBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
-       */
-      public com.yunhui.job.common.proto.RequestProto.Param.Builder getParamsBuilder(
-          int index) {
-        return getParamsFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
-       */
-      public com.yunhui.job.common.proto.RequestProto.ParamOrBuilder getParamsOrBuilder(
-          int index) {
-        if (paramsBuilder_ == null) {
-          return params_.get(index);  } else {
-          return paramsBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
-       */
-      public java.util.List<? extends com.yunhui.job.common.proto.RequestProto.ParamOrBuilder> 
-           getParamsOrBuilderList() {
-        if (paramsBuilder_ != null) {
-          return paramsBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(params_);
-        }
-      }
-      /**
-       * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
-       */
-      public com.yunhui.job.common.proto.RequestProto.Param.Builder addParamsBuilder() {
-        return getParamsFieldBuilder().addBuilder(
-            com.yunhui.job.common.proto.RequestProto.Param.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
-       */
-      public com.yunhui.job.common.proto.RequestProto.Param.Builder addParamsBuilder(
-          int index) {
-        return getParamsFieldBuilder().addBuilder(
-            index, com.yunhui.job.common.proto.RequestProto.Param.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
-       */
-      public java.util.List<com.yunhui.job.common.proto.RequestProto.Param.Builder> 
-           getParamsBuilderList() {
-        return getParamsFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.yunhui.job.common.proto.RequestProto.Param, com.yunhui.job.common.proto.RequestProto.Param.Builder, com.yunhui.job.common.proto.RequestProto.ParamOrBuilder> 
-          getParamsFieldBuilder() {
-        if (paramsBuilder_ == null) {
-          paramsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.yunhui.job.common.proto.RequestProto.Param, com.yunhui.job.common.proto.RequestProto.Param.Builder, com.yunhui.job.common.proto.RequestProto.ParamOrBuilder>(
-                  params_,
-                  ((bitField0_ & 0x00000001) != 0),
-                  getParentForChildren(),
-                  isClean());
-          params_ = null;
-        }
-        return paramsBuilder_;
-      }
-      @java.lang.Override
-      public final Builder setUnknownFields(
-          final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return super.setUnknownFields(unknownFields);
-      }
 
-      @java.lang.Override
-      public final Builder mergeUnknownFields(
-          final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return super.mergeUnknownFields(unknownFields);
-      }
+        /**
+         * <code>.com.yunhui.job.common.proto.Status status = 2;</code>
+         *
+         * @return The status.
+         */
+        public com.yunhui.job.common.proto.RequestProto.Status getStatus() {
+            @SuppressWarnings("deprecation")
+            com.yunhui.job.common.proto.RequestProto.Status result = com.yunhui.job.common.proto.RequestProto.Status.valueOf(status_);
+            return result == null ? com.yunhui.job.common.proto.RequestProto.Status.UNRECOGNIZED : result;
+        }
+
+        public static final int PARAMS_FIELD_NUMBER = 3;
+        private java.util.List<com.yunhui.job.common.proto.RequestProto.Param> params_;
+
+        /**
+         * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
+         */
+        public java.util.List<com.yunhui.job.common.proto.RequestProto.Param> getParamsList() {
+            return params_;
+        }
+
+        /**
+         * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
+         */
+        public java.util.List<? extends com.yunhui.job.common.proto.RequestProto.ParamOrBuilder>
+        getParamsOrBuilderList() {
+            return params_;
+        }
+
+        /**
+         * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
+         */
+        public int getParamsCount() {
+            return params_.size();
+        }
+
+        /**
+         * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
+         */
+        public com.yunhui.job.common.proto.RequestProto.Param getParams(int index) {
+            return params_.get(index);
+        }
+
+        /**
+         * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
+         */
+        public com.yunhui.job.common.proto.RequestProto.ParamOrBuilder getParamsOrBuilder(
+                int index) {
+            return params_.get(index);
+        }
+
+        private byte memoizedIsInitialized = -1;
+
+        @java.lang.Override
+        public final boolean isInitialized() {
+            byte isInitialized = memoizedIsInitialized;
+            if (isInitialized == 1) return true;
+            if (isInitialized == 0) return false;
+
+            memoizedIsInitialized = 1;
+            return true;
+        }
+
+        @java.lang.Override
+        public void writeTo(com.google.protobuf.CodedOutputStream output)
+                throws java.io.IOException {
+            if (type_ != com.yunhui.job.common.proto.RequestProto.Type.PING.getNumber()) {
+                output.writeEnum(1, type_);
+            }
+            if (status_ != com.yunhui.job.common.proto.RequestProto.Status.SUCCESS.getNumber()) {
+                output.writeEnum(2, status_);
+            }
+            for (int i = 0; i < params_.size(); i++) {
+                output.writeMessage(3, params_.get(i));
+            }
+            unknownFields.writeTo(output);
+        }
+
+        @java.lang.Override
+        public int getSerializedSize() {
+            int size = memoizedSize;
+            if (size != -1) return size;
+
+            size = 0;
+            if (type_ != com.yunhui.job.common.proto.RequestProto.Type.PING.getNumber()) {
+                size += com.google.protobuf.CodedOutputStream
+                        .computeEnumSize(1, type_);
+            }
+            if (status_ != com.yunhui.job.common.proto.RequestProto.Status.SUCCESS.getNumber()) {
+                size += com.google.protobuf.CodedOutputStream
+                        .computeEnumSize(2, status_);
+            }
+            for (int i = 0; i < params_.size(); i++) {
+                size += com.google.protobuf.CodedOutputStream
+                        .computeMessageSize(3, params_.get(i));
+            }
+            size += unknownFields.getSerializedSize();
+            memoizedSize = size;
+            return size;
+        }
+
+        @java.lang.Override
+        public boolean equals(final java.lang.Object obj) {
+            if (obj == this) {
+                return true;
+            }
+            if (!(obj instanceof com.yunhui.job.common.proto.RequestProto.Request)) {
+                return super.equals(obj);
+            }
+            com.yunhui.job.common.proto.RequestProto.Request other = (com.yunhui.job.common.proto.RequestProto.Request) obj;
+
+            if (type_ != other.type_) return false;
+            if (status_ != other.status_) return false;
+            if (!getParamsList()
+                    .equals(other.getParamsList())) return false;
+            if (!unknownFields.equals(other.unknownFields)) return false;
+            return true;
+        }
+
+        @java.lang.Override
+        public int hashCode() {
+            if (memoizedHashCode != 0) {
+                return memoizedHashCode;
+            }
+            int hash = 41;
+            hash = (19 * hash) + getDescriptor().hashCode();
+            hash = (37 * hash) + TYPE_FIELD_NUMBER;
+            hash = (53 * hash) + type_;
+            hash = (37 * hash) + STATUS_FIELD_NUMBER;
+            hash = (53 * hash) + status_;
+            if (getParamsCount() > 0) {
+                hash = (37 * hash) + PARAMS_FIELD_NUMBER;
+                hash = (53 * hash) + getParamsList().hashCode();
+            }
+            hash = (29 * hash) + unknownFields.hashCode();
+            memoizedHashCode = hash;
+            return hash;
+        }
+
+        public static com.yunhui.job.common.proto.RequestProto.Request parseFrom(
+                java.nio.ByteBuffer data)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data);
+        }
+
+        public static com.yunhui.job.common.proto.RequestProto.Request parseFrom(
+                java.nio.ByteBuffer data,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data, extensionRegistry);
+        }
+
+        public static com.yunhui.job.common.proto.RequestProto.Request parseFrom(
+                com.google.protobuf.ByteString data)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data);
+        }
+
+        public static com.yunhui.job.common.proto.RequestProto.Request parseFrom(
+                com.google.protobuf.ByteString data,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data, extensionRegistry);
+        }
+
+        public static com.yunhui.job.common.proto.RequestProto.Request parseFrom(byte[] data)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data);
+        }
+
+        public static com.yunhui.job.common.proto.RequestProto.Request parseFrom(
+                byte[] data,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data, extensionRegistry);
+        }
+
+        public static com.yunhui.job.common.proto.RequestProto.Request parseFrom(java.io.InputStream input)
+                throws java.io.IOException {
+            return com.google.protobuf.GeneratedMessageV3
+                    .parseWithIOException(PARSER, input);
+        }
+
+        public static com.yunhui.job.common.proto.RequestProto.Request parseFrom(
+                java.io.InputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws java.io.IOException {
+            return com.google.protobuf.GeneratedMessageV3
+                    .parseWithIOException(PARSER, input, extensionRegistry);
+        }
+
+        public static com.yunhui.job.common.proto.RequestProto.Request parseDelimitedFrom(java.io.InputStream input)
+                throws java.io.IOException {
+            return com.google.protobuf.GeneratedMessageV3
+                    .parseDelimitedWithIOException(PARSER, input);
+        }
+
+        public static com.yunhui.job.common.proto.RequestProto.Request parseDelimitedFrom(
+                java.io.InputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws java.io.IOException {
+            return com.google.protobuf.GeneratedMessageV3
+                    .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+        }
+
+        public static com.yunhui.job.common.proto.RequestProto.Request parseFrom(
+                com.google.protobuf.CodedInputStream input)
+                throws java.io.IOException {
+            return com.google.protobuf.GeneratedMessageV3
+                    .parseWithIOException(PARSER, input);
+        }
+
+        public static com.yunhui.job.common.proto.RequestProto.Request parseFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws java.io.IOException {
+            return com.google.protobuf.GeneratedMessageV3
+                    .parseWithIOException(PARSER, input, extensionRegistry);
+        }
+
+        @java.lang.Override
+        public Builder newBuilderForType() {
+            return newBuilder();
+        }
+
+        public static Builder newBuilder() {
+            return DEFAULT_INSTANCE.toBuilder();
+        }
+
+        public static Builder newBuilder(com.yunhui.job.common.proto.RequestProto.Request prototype) {
+            return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+        }
+
+        @java.lang.Override
+        public Builder toBuilder() {
+            return this == DEFAULT_INSTANCE
+                    ? new Builder() : new Builder().mergeFrom(this);
+        }
+
+        @java.lang.Override
+        protected Builder newBuilderForType(
+                com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+            Builder builder = new Builder(parent);
+            return builder;
+        }
+
+        /**
+         * Protobuf type {@code com.yunhui.job.common.proto.Request}
+         */
+        public static final class Builder extends
+                com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+                // @@protoc_insertion_point(builder_implements:com.yunhui.job.common.proto.Request)
+                com.yunhui.job.common.proto.RequestProto.RequestOrBuilder {
+            public static final com.google.protobuf.Descriptors.Descriptor
+            getDescriptor() {
+                return com.yunhui.job.common.proto.RequestProto.internal_static_com_yunhui_job_common_proto_Request_descriptor;
+            }
+
+            @java.lang.Override
+            protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+            internalGetFieldAccessorTable() {
+                return com.yunhui.job.common.proto.RequestProto.internal_static_com_yunhui_job_common_proto_Request_fieldAccessorTable
+                        .ensureFieldAccessorsInitialized(
+                                com.yunhui.job.common.proto.RequestProto.Request.class, com.yunhui.job.common.proto.RequestProto.Request.Builder.class);
+            }
+
+            // Construct using com.yunhui.job.common.proto.RequestProto.Request.newBuilder()
+            private Builder() {
+                maybeForceBuilderInitialization();
+            }
+
+            private Builder(
+                    com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+                super(parent);
+                maybeForceBuilderInitialization();
+            }
+
+            private void maybeForceBuilderInitialization() {
+                if (com.google.protobuf.GeneratedMessageV3
+                        .alwaysUseFieldBuilders) {
+                    getParamsFieldBuilder();
+                }
+            }
+
+            @java.lang.Override
+            public Builder clear() {
+                super.clear();
+                type_ = 0;
+
+                status_ = 0;
+
+                if (paramsBuilder_ == null) {
+                    params_ = java.util.Collections.emptyList();
+                    bitField0_ = (bitField0_ & ~0x00000001);
+                } else {
+                    paramsBuilder_.clear();
+                }
+                return this;
+            }
+
+            @java.lang.Override
+            public com.google.protobuf.Descriptors.Descriptor
+            getDescriptorForType() {
+                return com.yunhui.job.common.proto.RequestProto.internal_static_com_yunhui_job_common_proto_Request_descriptor;
+            }
+
+            @java.lang.Override
+            public com.yunhui.job.common.proto.RequestProto.Request getDefaultInstanceForType() {
+                return com.yunhui.job.common.proto.RequestProto.Request.getDefaultInstance();
+            }
+
+            @java.lang.Override
+            public com.yunhui.job.common.proto.RequestProto.Request build() {
+                com.yunhui.job.common.proto.RequestProto.Request result = buildPartial();
+                if (!result.isInitialized()) {
+                    throw newUninitializedMessageException(result);
+                }
+                return result;
+            }
+
+            @java.lang.Override
+            public com.yunhui.job.common.proto.RequestProto.Request buildPartial() {
+                com.yunhui.job.common.proto.RequestProto.Request result = new com.yunhui.job.common.proto.RequestProto.Request(this);
+                int from_bitField0_ = bitField0_;
+                result.type_ = type_;
+                result.status_ = status_;
+                if (paramsBuilder_ == null) {
+                    if (((bitField0_ & 0x00000001) != 0)) {
+                        params_ = java.util.Collections.unmodifiableList(params_);
+                        bitField0_ = (bitField0_ & ~0x00000001);
+                    }
+                    result.params_ = params_;
+                } else {
+                    result.params_ = paramsBuilder_.build();
+                }
+                onBuilt();
+                return result;
+            }
+
+            @java.lang.Override
+            public Builder clone() {
+                return super.clone();
+            }
+
+            @java.lang.Override
+            public Builder setField(
+                    com.google.protobuf.Descriptors.FieldDescriptor field,
+                    java.lang.Object value) {
+                return super.setField(field, value);
+            }
+
+            @java.lang.Override
+            public Builder clearField(
+                    com.google.protobuf.Descriptors.FieldDescriptor field) {
+                return super.clearField(field);
+            }
+
+            @java.lang.Override
+            public Builder clearOneof(
+                    com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+                return super.clearOneof(oneof);
+            }
+
+            @java.lang.Override
+            public Builder setRepeatedField(
+                    com.google.protobuf.Descriptors.FieldDescriptor field,
+                    int index, java.lang.Object value) {
+                return super.setRepeatedField(field, index, value);
+            }
+
+            @java.lang.Override
+            public Builder addRepeatedField(
+                    com.google.protobuf.Descriptors.FieldDescriptor field,
+                    java.lang.Object value) {
+                return super.addRepeatedField(field, value);
+            }
+
+            @java.lang.Override
+            public Builder mergeFrom(com.google.protobuf.Message other) {
+                if (other instanceof com.yunhui.job.common.proto.RequestProto.Request) {
+                    return mergeFrom((com.yunhui.job.common.proto.RequestProto.Request) other);
+                } else {
+                    super.mergeFrom(other);
+                    return this;
+                }
+            }
+
+            public Builder mergeFrom(com.yunhui.job.common.proto.RequestProto.Request other) {
+                if (other == com.yunhui.job.common.proto.RequestProto.Request.getDefaultInstance()) return this;
+                if (other.type_ != 0) {
+                    setTypeValue(other.getTypeValue());
+                }
+                if (other.status_ != 0) {
+                    setStatusValue(other.getStatusValue());
+                }
+                if (paramsBuilder_ == null) {
+                    if (!other.params_.isEmpty()) {
+                        if (params_.isEmpty()) {
+                            params_ = other.params_;
+                            bitField0_ = (bitField0_ & ~0x00000001);
+                        } else {
+                            ensureParamsIsMutable();
+                            params_.addAll(other.params_);
+                        }
+                        onChanged();
+                    }
+                } else {
+                    if (!other.params_.isEmpty()) {
+                        if (paramsBuilder_.isEmpty()) {
+                            paramsBuilder_.dispose();
+                            paramsBuilder_ = null;
+                            params_ = other.params_;
+                            bitField0_ = (bitField0_ & ~0x00000001);
+                            paramsBuilder_ =
+                                    com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                                            getParamsFieldBuilder() : null;
+                        } else {
+                            paramsBuilder_.addAllMessages(other.params_);
+                        }
+                    }
+                }
+                this.mergeUnknownFields(other.unknownFields);
+                onChanged();
+                return this;
+            }
+
+            @java.lang.Override
+            public final boolean isInitialized() {
+                return true;
+            }
+
+            @java.lang.Override
+            public Builder mergeFrom(
+                    com.google.protobuf.CodedInputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                com.yunhui.job.common.proto.RequestProto.Request parsedMessage = null;
+                try {
+                    parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+                } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                    parsedMessage = (com.yunhui.job.common.proto.RequestProto.Request) e.getUnfinishedMessage();
+                    throw e.unwrapIOException();
+                } finally {
+                    if (parsedMessage != null) {
+                        mergeFrom(parsedMessage);
+                    }
+                }
+                return this;
+            }
+
+            private int bitField0_;
+
+            private int type_ = 0;
+
+            /**
+             * <code>.com.yunhui.job.common.proto.Type type = 1;</code>
+             *
+             * @return The enum numeric value on the wire for type.
+             */
+            public int getTypeValue() {
+                return type_;
+            }
+
+            /**
+             * <code>.com.yunhui.job.common.proto.Type type = 1;</code>
+             *
+             * @param value The enum numeric value on the wire for type to set.
+             * @return This builder for chaining.
+             */
+            public Builder setTypeValue(int value) {
+                type_ = value;
+                onChanged();
+                return this;
+            }
+
+            /**
+             * <code>.com.yunhui.job.common.proto.Type type = 1;</code>
+             *
+             * @return The type.
+             */
+            public com.yunhui.job.common.proto.RequestProto.Type getType() {
+                @SuppressWarnings("deprecation")
+                com.yunhui.job.common.proto.RequestProto.Type result = com.yunhui.job.common.proto.RequestProto.Type.valueOf(type_);
+                return result == null ? com.yunhui.job.common.proto.RequestProto.Type.UNRECOGNIZED : result;
+            }
+
+            /**
+             * <code>.com.yunhui.job.common.proto.Type type = 1;</code>
+             *
+             * @param value The type to set.
+             * @return This builder for chaining.
+             */
+            public Builder setType(com.yunhui.job.common.proto.RequestProto.Type value) {
+                if (value == null) {
+                    throw new NullPointerException();
+                }
+
+                type_ = value.getNumber();
+                onChanged();
+                return this;
+            }
+
+            /**
+             * <code>.com.yunhui.job.common.proto.Type type = 1;</code>
+             *
+             * @return This builder for chaining.
+             */
+            public Builder clearType() {
+
+                type_ = 0;
+                onChanged();
+                return this;
+            }
+
+            private int status_ = 0;
+
+            /**
+             * <code>.com.yunhui.job.common.proto.Status status = 2;</code>
+             *
+             * @return The enum numeric value on the wire for status.
+             */
+            public int getStatusValue() {
+                return status_;
+            }
+
+            /**
+             * <code>.com.yunhui.job.common.proto.Status status = 2;</code>
+             *
+             * @param value The enum numeric value on the wire for status to set.
+             * @return This builder for chaining.
+             */
+            public Builder setStatusValue(int value) {
+                status_ = value;
+                onChanged();
+                return this;
+            }
+
+            /**
+             * <code>.com.yunhui.job.common.proto.Status status = 2;</code>
+             *
+             * @return The status.
+             */
+            public com.yunhui.job.common.proto.RequestProto.Status getStatus() {
+                @SuppressWarnings("deprecation")
+                com.yunhui.job.common.proto.RequestProto.Status result = com.yunhui.job.common.proto.RequestProto.Status.valueOf(status_);
+                return result == null ? com.yunhui.job.common.proto.RequestProto.Status.UNRECOGNIZED : result;
+            }
+
+            /**
+             * <code>.com.yunhui.job.common.proto.Status status = 2;</code>
+             *
+             * @param value The status to set.
+             * @return This builder for chaining.
+             */
+            public Builder setStatus(com.yunhui.job.common.proto.RequestProto.Status value) {
+                if (value == null) {
+                    throw new NullPointerException();
+                }
+
+                status_ = value.getNumber();
+                onChanged();
+                return this;
+            }
+
+            /**
+             * <code>.com.yunhui.job.common.proto.Status status = 2;</code>
+             *
+             * @return This builder for chaining.
+             */
+            public Builder clearStatus() {
+
+                status_ = 0;
+                onChanged();
+                return this;
+            }
+
+            private java.util.List<com.yunhui.job.common.proto.RequestProto.Param> params_ =
+                    java.util.Collections.emptyList();
+
+            private void ensureParamsIsMutable() {
+                if (!((bitField0_ & 0x00000001) != 0)) {
+                    params_ = new java.util.ArrayList<com.yunhui.job.common.proto.RequestProto.Param>(params_);
+                    bitField0_ |= 0x00000001;
+                }
+            }
+
+            private com.google.protobuf.RepeatedFieldBuilderV3<
+                    com.yunhui.job.common.proto.RequestProto.Param, com.yunhui.job.common.proto.RequestProto.Param.Builder, com.yunhui.job.common.proto.RequestProto.ParamOrBuilder> paramsBuilder_;
+
+            /**
+             * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
+             */
+            public java.util.List<com.yunhui.job.common.proto.RequestProto.Param> getParamsList() {
+                if (paramsBuilder_ == null) {
+                    return java.util.Collections.unmodifiableList(params_);
+                } else {
+                    return paramsBuilder_.getMessageList();
+                }
+            }
+
+            /**
+             * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
+             */
+            public int getParamsCount() {
+                if (paramsBuilder_ == null) {
+                    return params_.size();
+                } else {
+                    return paramsBuilder_.getCount();
+                }
+            }
+
+            /**
+             * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
+             */
+            public com.yunhui.job.common.proto.RequestProto.Param getParams(int index) {
+                if (paramsBuilder_ == null) {
+                    return params_.get(index);
+                } else {
+                    return paramsBuilder_.getMessage(index);
+                }
+            }
+
+            /**
+             * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
+             */
+            public Builder setParams(
+                    int index, com.yunhui.job.common.proto.RequestProto.Param value) {
+                if (paramsBuilder_ == null) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    ensureParamsIsMutable();
+                    params_.set(index, value);
+                    onChanged();
+                } else {
+                    paramsBuilder_.setMessage(index, value);
+                }
+                return this;
+            }
+
+            /**
+             * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
+             */
+            public Builder setParams(
+                    int index, com.yunhui.job.common.proto.RequestProto.Param.Builder builderForValue) {
+                if (paramsBuilder_ == null) {
+                    ensureParamsIsMutable();
+                    params_.set(index, builderForValue.build());
+                    onChanged();
+                } else {
+                    paramsBuilder_.setMessage(index, builderForValue.build());
+                }
+                return this;
+            }
+
+            /**
+             * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
+             */
+            public Builder addParams(com.yunhui.job.common.proto.RequestProto.Param value) {
+                if (paramsBuilder_ == null) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    ensureParamsIsMutable();
+                    params_.add(value);
+                    onChanged();
+                } else {
+                    paramsBuilder_.addMessage(value);
+                }
+                return this;
+            }
+
+            /**
+             * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
+             */
+            public Builder addParams(
+                    int index, com.yunhui.job.common.proto.RequestProto.Param value) {
+                if (paramsBuilder_ == null) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    ensureParamsIsMutable();
+                    params_.add(index, value);
+                    onChanged();
+                } else {
+                    paramsBuilder_.addMessage(index, value);
+                }
+                return this;
+            }
+
+            /**
+             * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
+             */
+            public Builder addParams(
+                    com.yunhui.job.common.proto.RequestProto.Param.Builder builderForValue) {
+                if (paramsBuilder_ == null) {
+                    ensureParamsIsMutable();
+                    params_.add(builderForValue.build());
+                    onChanged();
+                } else {
+                    paramsBuilder_.addMessage(builderForValue.build());
+                }
+                return this;
+            }
+
+            /**
+             * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
+             */
+            public Builder addParams(
+                    int index, com.yunhui.job.common.proto.RequestProto.Param.Builder builderForValue) {
+                if (paramsBuilder_ == null) {
+                    ensureParamsIsMutable();
+                    params_.add(index, builderForValue.build());
+                    onChanged();
+                } else {
+                    paramsBuilder_.addMessage(index, builderForValue.build());
+                }
+                return this;
+            }
+
+            /**
+             * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
+             */
+            public Builder addAllParams(
+                    java.lang.Iterable<? extends com.yunhui.job.common.proto.RequestProto.Param> values) {
+                if (paramsBuilder_ == null) {
+                    ensureParamsIsMutable();
+                    com.google.protobuf.AbstractMessageLite.Builder.addAll(
+                            values, params_);
+                    onChanged();
+                } else {
+                    paramsBuilder_.addAllMessages(values);
+                }
+                return this;
+            }
+
+            /**
+             * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
+             */
+            public Builder clearParams() {
+                if (paramsBuilder_ == null) {
+                    params_ = java.util.Collections.emptyList();
+                    bitField0_ = (bitField0_ & ~0x00000001);
+                    onChanged();
+                } else {
+                    paramsBuilder_.clear();
+                }
+                return this;
+            }
+
+            /**
+             * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
+             */
+            public Builder removeParams(int index) {
+                if (paramsBuilder_ == null) {
+                    ensureParamsIsMutable();
+                    params_.remove(index);
+                    onChanged();
+                } else {
+                    paramsBuilder_.remove(index);
+                }
+                return this;
+            }
+
+            /**
+             * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
+             */
+            public com.yunhui.job.common.proto.RequestProto.Param.Builder getParamsBuilder(
+                    int index) {
+                return getParamsFieldBuilder().getBuilder(index);
+            }
+
+            /**
+             * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
+             */
+            public com.yunhui.job.common.proto.RequestProto.ParamOrBuilder getParamsOrBuilder(
+                    int index) {
+                if (paramsBuilder_ == null) {
+                    return params_.get(index);
+                } else {
+                    return paramsBuilder_.getMessageOrBuilder(index);
+                }
+            }
+
+            /**
+             * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
+             */
+            public java.util.List<? extends com.yunhui.job.common.proto.RequestProto.ParamOrBuilder>
+            getParamsOrBuilderList() {
+                if (paramsBuilder_ != null) {
+                    return paramsBuilder_.getMessageOrBuilderList();
+                } else {
+                    return java.util.Collections.unmodifiableList(params_);
+                }
+            }
+
+            /**
+             * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
+             */
+            public com.yunhui.job.common.proto.RequestProto.Param.Builder addParamsBuilder() {
+                return getParamsFieldBuilder().addBuilder(
+                        com.yunhui.job.common.proto.RequestProto.Param.getDefaultInstance());
+            }
+
+            /**
+             * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
+             */
+            public com.yunhui.job.common.proto.RequestProto.Param.Builder addParamsBuilder(
+                    int index) {
+                return getParamsFieldBuilder().addBuilder(
+                        index, com.yunhui.job.common.proto.RequestProto.Param.getDefaultInstance());
+            }
+
+            /**
+             * <code>repeated .com.yunhui.job.common.proto.Param params = 3;</code>
+             */
+            public java.util.List<com.yunhui.job.common.proto.RequestProto.Param.Builder>
+            getParamsBuilderList() {
+                return getParamsFieldBuilder().getBuilderList();
+            }
+
+            private com.google.protobuf.RepeatedFieldBuilderV3<
+                    com.yunhui.job.common.proto.RequestProto.Param, com.yunhui.job.common.proto.RequestProto.Param.Builder, com.yunhui.job.common.proto.RequestProto.ParamOrBuilder>
+            getParamsFieldBuilder() {
+                if (paramsBuilder_ == null) {
+                    paramsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+                            com.yunhui.job.common.proto.RequestProto.Param, com.yunhui.job.common.proto.RequestProto.Param.Builder, com.yunhui.job.common.proto.RequestProto.ParamOrBuilder>(
+                            params_,
+                            ((bitField0_ & 0x00000001) != 0),
+                            getParentForChildren(),
+                            isClean());
+                    params_ = null;
+                }
+                return paramsBuilder_;
+            }
+
+            @java.lang.Override
+            public final Builder setUnknownFields(
+                    final com.google.protobuf.UnknownFieldSet unknownFields) {
+                return super.setUnknownFields(unknownFields);
+            }
+
+            @java.lang.Override
+            public final Builder mergeUnknownFields(
+                    final com.google.protobuf.UnknownFieldSet unknownFields) {
+                return super.mergeUnknownFields(unknownFields);
+            }
 
 
-      // @@protoc_insertion_point(builder_scope:com.yunhui.job.common.proto.Request)
+            // @@protoc_insertion_point(builder_scope:com.yunhui.job.common.proto.Request)
+        }
+
+        // @@protoc_insertion_point(class_scope:com.yunhui.job.common.proto.Request)
+        private static final com.yunhui.job.common.proto.RequestProto.Request DEFAULT_INSTANCE;
+
+        static {
+            DEFAULT_INSTANCE = new com.yunhui.job.common.proto.RequestProto.Request();
+        }
+
+        public static com.yunhui.job.common.proto.RequestProto.Request getDefaultInstance() {
+            return DEFAULT_INSTANCE;
+        }
+
+        private static final com.google.protobuf.Parser<Request>
+                PARSER = new com.google.protobuf.AbstractParser<Request>() {
+            @java.lang.Override
+            public Request parsePartialFrom(
+                    com.google.protobuf.CodedInputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return new Request(input, extensionRegistry);
+            }
+        };
+
+        public static com.google.protobuf.Parser<Request> parser() {
+            return PARSER;
+        }
+
+        @java.lang.Override
+        public com.google.protobuf.Parser<Request> getParserForType() {
+            return PARSER;
+        }
+
+        @java.lang.Override
+        public com.yunhui.job.common.proto.RequestProto.Request getDefaultInstanceForType() {
+            return DEFAULT_INSTANCE;
+        }
+
     }
 
-    // @@protoc_insertion_point(class_scope:com.yunhui.job.common.proto.Request)
-    private static final com.yunhui.job.common.proto.RequestProto.Request DEFAULT_INSTANCE;
-    static {
-      DEFAULT_INSTANCE = new com.yunhui.job.common.proto.RequestProto.Request();
-    }
+    public interface ParamOrBuilder extends
+            // @@protoc_insertion_point(interface_extends:com.yunhui.job.common.proto.Param)
+            com.google.protobuf.MessageOrBuilder {
 
-    public static com.yunhui.job.common.proto.RequestProto.Request getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
+        /**
+         * <code>string key = 1;</code>
+         *
+         * @return The key.
+         */
+        java.lang.String getKey();
 
-    private static final com.google.protobuf.Parser<Request>
-        PARSER = new com.google.protobuf.AbstractParser<Request>() {
-      @java.lang.Override
-      public Request parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new Request(input, extensionRegistry);
-      }
-    };
-
-    public static com.google.protobuf.Parser<Request> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<Request> getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.yunhui.job.common.proto.RequestProto.Request getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
-
-  }
-
-  public interface ParamOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:com.yunhui.job.common.proto.Param)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <code>string key = 1;</code>
-     * @return The key.
-     */
-    java.lang.String getKey();
-    /**
-     * <code>string key = 1;</code>
-     * @return The bytes for key.
-     */
-    com.google.protobuf.ByteString
+        /**
+         * <code>string key = 1;</code>
+         *
+         * @return The bytes for key.
+         */
+        com.google.protobuf.ByteString
         getKeyBytes();
 
-    /**
-     * <code>string value = 2;</code>
-     * @return The value.
-     */
-    java.lang.String getValue();
-    /**
-     * <code>string value = 2;</code>
-     * @return The bytes for value.
-     */
-    com.google.protobuf.ByteString
+        /**
+         * <code>string value = 2;</code>
+         *
+         * @return The value.
+         */
+        java.lang.String getValue();
+
+        /**
+         * <code>string value = 2;</code>
+         *
+         * @return The bytes for value.
+         */
+        com.google.protobuf.ByteString
         getValueBytes();
-  }
-  /**
-   * Protobuf type {@code com.yunhui.job.common.proto.Param}
-   */
-  public  static final class Param extends
-      com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:com.yunhui.job.common.proto.Param)
-      ParamOrBuilder {
-  private static final long serialVersionUID = 0L;
-    // Use Param.newBuilder() to construct.
-    private Param(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
-      super(builder);
-    }
-    private Param() {
-      key_ = "";
-      value_ = "";
     }
 
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-        UnusedPrivateParameter unused) {
-      return new Param();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private Param(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 10: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              key_ = s;
-              break;
-            }
-            case 18: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              value_ = s;
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return com.yunhui.job.common.proto.RequestProto.internal_static_com_yunhui_job_common_proto_Param_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return com.yunhui.job.common.proto.RequestProto.internal_static_com_yunhui_job_common_proto_Param_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              com.yunhui.job.common.proto.RequestProto.Param.class, com.yunhui.job.common.proto.RequestProto.Param.Builder.class);
-    }
-
-    public static final int KEY_FIELD_NUMBER = 1;
-    private volatile java.lang.Object key_;
-    /**
-     * <code>string key = 1;</code>
-     * @return The key.
-     */
-    public java.lang.String getKey() {
-      java.lang.Object ref = key_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        key_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string key = 1;</code>
-     * @return The bytes for key.
-     */
-    public com.google.protobuf.ByteString
-        getKeyBytes() {
-      java.lang.Object ref = key_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        key_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int VALUE_FIELD_NUMBER = 2;
-    private volatile java.lang.Object value_;
-    /**
-     * <code>string value = 2;</code>
-     * @return The value.
-     */
-    public java.lang.String getValue() {
-      java.lang.Object ref = value_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        value_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string value = 2;</code>
-     * @return The bytes for value.
-     */
-    public com.google.protobuf.ByteString
-        getValueBytes() {
-      java.lang.Object ref = value_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        value_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    private byte memoizedIsInitialized = -1;
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
-      if (!getKeyBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, key_);
-      }
-      if (!getValueBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, value_);
-      }
-      unknownFields.writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (!getKeyBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, key_);
-      }
-      if (!getValueBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, value_);
-      }
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-       return true;
-      }
-      if (!(obj instanceof com.yunhui.job.common.proto.RequestProto.Param)) {
-        return super.equals(obj);
-      }
-      com.yunhui.job.common.proto.RequestProto.Param other = (com.yunhui.job.common.proto.RequestProto.Param) obj;
-
-      if (!getKey()
-          .equals(other.getKey())) return false;
-      if (!getValue()
-          .equals(other.getValue())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + KEY_FIELD_NUMBER;
-      hash = (53 * hash) + getKey().hashCode();
-      hash = (37 * hash) + VALUE_FIELD_NUMBER;
-      hash = (53 * hash) + getValue().hashCode();
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
-    }
-
-    public static com.yunhui.job.common.proto.RequestProto.Param parseFrom(
-        java.nio.ByteBuffer data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static com.yunhui.job.common.proto.RequestProto.Param parseFrom(
-        java.nio.ByteBuffer data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static com.yunhui.job.common.proto.RequestProto.Param parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static com.yunhui.job.common.proto.RequestProto.Param parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static com.yunhui.job.common.proto.RequestProto.Param parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static com.yunhui.job.common.proto.RequestProto.Param parseFrom(
-        byte[] data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static com.yunhui.job.common.proto.RequestProto.Param parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input);
-    }
-    public static com.yunhui.job.common.proto.RequestProto.Param parseFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
-    }
-    public static com.yunhui.job.common.proto.RequestProto.Param parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input);
-    }
-    public static com.yunhui.job.common.proto.RequestProto.Param parseDelimitedFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
-    }
-    public static com.yunhui.job.common.proto.RequestProto.Param parseFrom(
-        com.google.protobuf.CodedInputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input);
-    }
-    public static com.yunhui.job.common.proto.RequestProto.Param parseFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
-    }
-
-    @java.lang.Override
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder() {
-      return DEFAULT_INSTANCE.toBuilder();
-    }
-    public static Builder newBuilder(com.yunhui.job.common.proto.RequestProto.Param prototype) {
-      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-    }
-    @java.lang.Override
-    public Builder toBuilder() {
-      return this == DEFAULT_INSTANCE
-          ? new Builder() : new Builder().mergeFrom(this);
-    }
-
-    @java.lang.Override
-    protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
-    }
     /**
      * Protobuf type {@code com.yunhui.job.common.proto.Param}
      */
-    public static final class Builder extends
-        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:com.yunhui.job.common.proto.Param)
-        com.yunhui.job.common.proto.RequestProto.ParamOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return com.yunhui.job.common.proto.RequestProto.internal_static_com_yunhui_job_common_proto_Param_descriptor;
-      }
+    public static final class Param extends
+            com.google.protobuf.GeneratedMessageV3 implements
+            // @@protoc_insertion_point(message_implements:com.yunhui.job.common.proto.Param)
+            ParamOrBuilder {
+        private static final long serialVersionUID = 0L;
 
-      @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return com.yunhui.job.common.proto.RequestProto.internal_static_com_yunhui_job_common_proto_Param_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                com.yunhui.job.common.proto.RequestProto.Param.class, com.yunhui.job.common.proto.RequestProto.Param.Builder.class);
-      }
-
-      // Construct using com.yunhui.job.common.proto.RequestProto.Param.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
+        // Use Param.newBuilder() to construct.
+        private Param(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+            super(builder);
         }
-      }
-      @java.lang.Override
-      public Builder clear() {
-        super.clear();
-        key_ = "";
 
-        value_ = "";
-
-        return this;
-      }
-
-      @java.lang.Override
-      public com.google.protobuf.Descriptors.Descriptor
-          getDescriptorForType() {
-        return com.yunhui.job.common.proto.RequestProto.internal_static_com_yunhui_job_common_proto_Param_descriptor;
-      }
-
-      @java.lang.Override
-      public com.yunhui.job.common.proto.RequestProto.Param getDefaultInstanceForType() {
-        return com.yunhui.job.common.proto.RequestProto.Param.getDefaultInstance();
-      }
-
-      @java.lang.Override
-      public com.yunhui.job.common.proto.RequestProto.Param build() {
-        com.yunhui.job.common.proto.RequestProto.Param result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(result);
+        private Param() {
+            key_ = "";
+            value_ = "";
         }
-        return result;
-      }
 
-      @java.lang.Override
-      public com.yunhui.job.common.proto.RequestProto.Param buildPartial() {
-        com.yunhui.job.common.proto.RequestProto.Param result = new com.yunhui.job.common.proto.RequestProto.Param(this);
-        result.key_ = key_;
-        result.value_ = value_;
-        onBuilt();
-        return result;
-      }
-
-      @java.lang.Override
-      public Builder clone() {
-        return super.clone();
-      }
-      @java.lang.Override
-      public Builder setField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
-        return super.setField(field, value);
-      }
-      @java.lang.Override
-      public Builder clearField(
-          com.google.protobuf.Descriptors.FieldDescriptor field) {
-        return super.clearField(field);
-      }
-      @java.lang.Override
-      public Builder clearOneof(
-          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-        return super.clearOneof(oneof);
-      }
-      @java.lang.Override
-      public Builder setRepeatedField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, java.lang.Object value) {
-        return super.setRepeatedField(field, index, value);
-      }
-      @java.lang.Override
-      public Builder addRepeatedField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
-        return super.addRepeatedField(field, value);
-      }
-      @java.lang.Override
-      public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.yunhui.job.common.proto.RequestProto.Param) {
-          return mergeFrom((com.yunhui.job.common.proto.RequestProto.Param)other);
-        } else {
-          super.mergeFrom(other);
-          return this;
+        @java.lang.Override
+        @SuppressWarnings({"unused"})
+        protected java.lang.Object newInstance(
+                UnusedPrivateParameter unused) {
+            return new Param();
         }
-      }
 
-      public Builder mergeFrom(com.yunhui.job.common.proto.RequestProto.Param other) {
-        if (other == com.yunhui.job.common.proto.RequestProto.Param.getDefaultInstance()) return this;
-        if (!other.getKey().isEmpty()) {
-          key_ = other.key_;
-          onChanged();
+        @java.lang.Override
+        public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+            return this.unknownFields;
         }
-        if (!other.getValue().isEmpty()) {
-          value_ = other.value_;
-          onChanged();
+
+        private Param(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            this();
+            if (extensionRegistry == null) {
+                throw new java.lang.NullPointerException();
+            }
+            com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+                    com.google.protobuf.UnknownFieldSet.newBuilder();
+            try {
+                boolean done = false;
+                while (!done) {
+                    int tag = input.readTag();
+                    switch (tag) {
+                        case 0:
+                            done = true;
+                            break;
+                        case 10: {
+                            java.lang.String s = input.readStringRequireUtf8();
+
+                            key_ = s;
+                            break;
+                        }
+                        case 18: {
+                            java.lang.String s = input.readStringRequireUtf8();
+
+                            value_ = s;
+                            break;
+                        }
+                        default: {
+                            if (!parseUnknownField(
+                                    input, unknownFields, extensionRegistry, tag)) {
+                                done = true;
+                            }
+                            break;
+                        }
+                    }
+                }
+            } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                throw e.setUnfinishedMessage(this);
+            } catch (java.io.IOException e) {
+                throw new com.google.protobuf.InvalidProtocolBufferException(
+                        e).setUnfinishedMessage(this);
+            } finally {
+                this.unknownFields = unknownFields.build();
+                makeExtensionsImmutable();
+            }
         }
-        this.mergeUnknownFields(other.unknownFields);
-        onChanged();
-        return this;
-      }
 
-      @java.lang.Override
-      public final boolean isInitialized() {
-        return true;
-      }
-
-      @java.lang.Override
-      public Builder mergeFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        com.yunhui.job.common.proto.RequestProto.Param parsedMessage = null;
-        try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.yunhui.job.common.proto.RequestProto.Param) e.getUnfinishedMessage();
-          throw e.unwrapIOException();
-        } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
+        public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+            return com.yunhui.job.common.proto.RequestProto.internal_static_com_yunhui_job_common_proto_Param_descriptor;
         }
-        return this;
-      }
 
-      private java.lang.Object key_ = "";
-      /**
-       * <code>string key = 1;</code>
-       * @return The key.
-       */
-      public java.lang.String getKey() {
-        java.lang.Object ref = key_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          key_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
+        @java.lang.Override
+        protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+            return com.yunhui.job.common.proto.RequestProto.internal_static_com_yunhui_job_common_proto_Param_fieldAccessorTable
+                    .ensureFieldAccessorsInitialized(
+                            com.yunhui.job.common.proto.RequestProto.Param.class, com.yunhui.job.common.proto.RequestProto.Param.Builder.class);
         }
-      }
-      /**
-       * <code>string key = 1;</code>
-       * @return The bytes for key.
-       */
-      public com.google.protobuf.ByteString
-          getKeyBytes() {
-        java.lang.Object ref = key_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          key_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
+
+        public static final int KEY_FIELD_NUMBER = 1;
+        private volatile java.lang.Object key_;
+
+        /**
+         * <code>string key = 1;</code>
+         *
+         * @return The key.
+         */
+        public java.lang.String getKey() {
+            java.lang.Object ref = key_;
+            if (ref instanceof java.lang.String) {
+                return (java.lang.String) ref;
+            } else {
+                com.google.protobuf.ByteString bs =
+                        (com.google.protobuf.ByteString) ref;
+                java.lang.String s = bs.toStringUtf8();
+                key_ = s;
+                return s;
+            }
         }
-      }
-      /**
-       * <code>string key = 1;</code>
-       * @param value The key to set.
-       * @return This builder for chaining.
-       */
-      public Builder setKey(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        key_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string key = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearKey() {
-        
-        key_ = getDefaultInstance().getKey();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string key = 1;</code>
-       * @param value The bytes for key to set.
-       * @return This builder for chaining.
-       */
-      public Builder setKeyBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        key_ = value;
-        onChanged();
-        return this;
-      }
 
-      private java.lang.Object value_ = "";
-      /**
-       * <code>string value = 2;</code>
-       * @return The value.
-       */
-      public java.lang.String getValue() {
-        java.lang.Object ref = value_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          value_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
+        /**
+         * <code>string key = 1;</code>
+         *
+         * @return The bytes for key.
+         */
+        public com.google.protobuf.ByteString
+        getKeyBytes() {
+            java.lang.Object ref = key_;
+            if (ref instanceof java.lang.String) {
+                com.google.protobuf.ByteString b =
+                        com.google.protobuf.ByteString.copyFromUtf8(
+                                (java.lang.String) ref);
+                key_ = b;
+                return b;
+            } else {
+                return (com.google.protobuf.ByteString) ref;
+            }
         }
-      }
-      /**
-       * <code>string value = 2;</code>
-       * @return The bytes for value.
-       */
-      public com.google.protobuf.ByteString
-          getValueBytes() {
-        java.lang.Object ref = value_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          value_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
+
+        public static final int VALUE_FIELD_NUMBER = 2;
+        private volatile java.lang.Object value_;
+
+        /**
+         * <code>string value = 2;</code>
+         *
+         * @return The value.
+         */
+        public java.lang.String getValue() {
+            java.lang.Object ref = value_;
+            if (ref instanceof java.lang.String) {
+                return (java.lang.String) ref;
+            } else {
+                com.google.protobuf.ByteString bs =
+                        (com.google.protobuf.ByteString) ref;
+                java.lang.String s = bs.toStringUtf8();
+                value_ = s;
+                return s;
+            }
         }
-      }
-      /**
-       * <code>string value = 2;</code>
-       * @param value The value to set.
-       * @return This builder for chaining.
-       */
-      public Builder setValue(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        value_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string value = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearValue() {
-        
-        value_ = getDefaultInstance().getValue();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string value = 2;</code>
-       * @param value The bytes for value to set.
-       * @return This builder for chaining.
-       */
-      public Builder setValueBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        value_ = value;
-        onChanged();
-        return this;
-      }
-      @java.lang.Override
-      public final Builder setUnknownFields(
-          final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return super.setUnknownFields(unknownFields);
-      }
 
-      @java.lang.Override
-      public final Builder mergeUnknownFields(
-          final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return super.mergeUnknownFields(unknownFields);
-      }
+        /**
+         * <code>string value = 2;</code>
+         *
+         * @return The bytes for value.
+         */
+        public com.google.protobuf.ByteString
+        getValueBytes() {
+            java.lang.Object ref = value_;
+            if (ref instanceof java.lang.String) {
+                com.google.protobuf.ByteString b =
+                        com.google.protobuf.ByteString.copyFromUtf8(
+                                (java.lang.String) ref);
+                value_ = b;
+                return b;
+            } else {
+                return (com.google.protobuf.ByteString) ref;
+            }
+        }
+
+        private byte memoizedIsInitialized = -1;
+
+        @java.lang.Override
+        public final boolean isInitialized() {
+            byte isInitialized = memoizedIsInitialized;
+            if (isInitialized == 1) return true;
+            if (isInitialized == 0) return false;
+
+            memoizedIsInitialized = 1;
+            return true;
+        }
+
+        @java.lang.Override
+        public void writeTo(com.google.protobuf.CodedOutputStream output)
+                throws java.io.IOException {
+            if (!getKeyBytes().isEmpty()) {
+                com.google.protobuf.GeneratedMessageV3.writeString(output, 1, key_);
+            }
+            if (!getValueBytes().isEmpty()) {
+                com.google.protobuf.GeneratedMessageV3.writeString(output, 2, value_);
+            }
+            unknownFields.writeTo(output);
+        }
+
+        @java.lang.Override
+        public int getSerializedSize() {
+            int size = memoizedSize;
+            if (size != -1) return size;
+
+            size = 0;
+            if (!getKeyBytes().isEmpty()) {
+                size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, key_);
+            }
+            if (!getValueBytes().isEmpty()) {
+                size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, value_);
+            }
+            size += unknownFields.getSerializedSize();
+            memoizedSize = size;
+            return size;
+        }
+
+        @java.lang.Override
+        public boolean equals(final java.lang.Object obj) {
+            if (obj == this) {
+                return true;
+            }
+            if (!(obj instanceof com.yunhui.job.common.proto.RequestProto.Param)) {
+                return super.equals(obj);
+            }
+            com.yunhui.job.common.proto.RequestProto.Param other = (com.yunhui.job.common.proto.RequestProto.Param) obj;
+
+            if (!getKey()
+                    .equals(other.getKey())) return false;
+            if (!getValue()
+                    .equals(other.getValue())) return false;
+            if (!unknownFields.equals(other.unknownFields)) return false;
+            return true;
+        }
+
+        @java.lang.Override
+        public int hashCode() {
+            if (memoizedHashCode != 0) {
+                return memoizedHashCode;
+            }
+            int hash = 41;
+            hash = (19 * hash) + getDescriptor().hashCode();
+            hash = (37 * hash) + KEY_FIELD_NUMBER;
+            hash = (53 * hash) + getKey().hashCode();
+            hash = (37 * hash) + VALUE_FIELD_NUMBER;
+            hash = (53 * hash) + getValue().hashCode();
+            hash = (29 * hash) + unknownFields.hashCode();
+            memoizedHashCode = hash;
+            return hash;
+        }
+
+        public static com.yunhui.job.common.proto.RequestProto.Param parseFrom(
+                java.nio.ByteBuffer data)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data);
+        }
+
+        public static com.yunhui.job.common.proto.RequestProto.Param parseFrom(
+                java.nio.ByteBuffer data,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data, extensionRegistry);
+        }
+
+        public static com.yunhui.job.common.proto.RequestProto.Param parseFrom(
+                com.google.protobuf.ByteString data)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data);
+        }
+
+        public static com.yunhui.job.common.proto.RequestProto.Param parseFrom(
+                com.google.protobuf.ByteString data,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data, extensionRegistry);
+        }
+
+        public static com.yunhui.job.common.proto.RequestProto.Param parseFrom(byte[] data)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data);
+        }
+
+        public static com.yunhui.job.common.proto.RequestProto.Param parseFrom(
+                byte[] data,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data, extensionRegistry);
+        }
+
+        public static com.yunhui.job.common.proto.RequestProto.Param parseFrom(java.io.InputStream input)
+                throws java.io.IOException {
+            return com.google.protobuf.GeneratedMessageV3
+                    .parseWithIOException(PARSER, input);
+        }
+
+        public static com.yunhui.job.common.proto.RequestProto.Param parseFrom(
+                java.io.InputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws java.io.IOException {
+            return com.google.protobuf.GeneratedMessageV3
+                    .parseWithIOException(PARSER, input, extensionRegistry);
+        }
+
+        public static com.yunhui.job.common.proto.RequestProto.Param parseDelimitedFrom(java.io.InputStream input)
+                throws java.io.IOException {
+            return com.google.protobuf.GeneratedMessageV3
+                    .parseDelimitedWithIOException(PARSER, input);
+        }
+
+        public static com.yunhui.job.common.proto.RequestProto.Param parseDelimitedFrom(
+                java.io.InputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws java.io.IOException {
+            return com.google.protobuf.GeneratedMessageV3
+                    .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+        }
+
+        public static com.yunhui.job.common.proto.RequestProto.Param parseFrom(
+                com.google.protobuf.CodedInputStream input)
+                throws java.io.IOException {
+            return com.google.protobuf.GeneratedMessageV3
+                    .parseWithIOException(PARSER, input);
+        }
+
+        public static com.yunhui.job.common.proto.RequestProto.Param parseFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws java.io.IOException {
+            return com.google.protobuf.GeneratedMessageV3
+                    .parseWithIOException(PARSER, input, extensionRegistry);
+        }
+
+        @java.lang.Override
+        public Builder newBuilderForType() {
+            return newBuilder();
+        }
+
+        public static Builder newBuilder() {
+            return DEFAULT_INSTANCE.toBuilder();
+        }
+
+        public static Builder newBuilder(com.yunhui.job.common.proto.RequestProto.Param prototype) {
+            return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+        }
+
+        @java.lang.Override
+        public Builder toBuilder() {
+            return this == DEFAULT_INSTANCE
+                    ? new Builder() : new Builder().mergeFrom(this);
+        }
+
+        @java.lang.Override
+        protected Builder newBuilderForType(
+                com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+            Builder builder = new Builder(parent);
+            return builder;
+        }
+
+        /**
+         * Protobuf type {@code com.yunhui.job.common.proto.Param}
+         */
+        public static final class Builder extends
+                com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+                // @@protoc_insertion_point(builder_implements:com.yunhui.job.common.proto.Param)
+                com.yunhui.job.common.proto.RequestProto.ParamOrBuilder {
+            public static final com.google.protobuf.Descriptors.Descriptor
+            getDescriptor() {
+                return com.yunhui.job.common.proto.RequestProto.internal_static_com_yunhui_job_common_proto_Param_descriptor;
+            }
+
+            @java.lang.Override
+            protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+            internalGetFieldAccessorTable() {
+                return com.yunhui.job.common.proto.RequestProto.internal_static_com_yunhui_job_common_proto_Param_fieldAccessorTable
+                        .ensureFieldAccessorsInitialized(
+                                com.yunhui.job.common.proto.RequestProto.Param.class, com.yunhui.job.common.proto.RequestProto.Param.Builder.class);
+            }
+
+            // Construct using com.yunhui.job.common.proto.RequestProto.Param.newBuilder()
+            private Builder() {
+                maybeForceBuilderInitialization();
+            }
+
+            private Builder(
+                    com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+                super(parent);
+                maybeForceBuilderInitialization();
+            }
+
+            private void maybeForceBuilderInitialization() {
+                if (com.google.protobuf.GeneratedMessageV3
+                        .alwaysUseFieldBuilders) {
+                }
+            }
+
+            @java.lang.Override
+            public Builder clear() {
+                super.clear();
+                key_ = "";
+
+                value_ = "";
+
+                return this;
+            }
+
+            @java.lang.Override
+            public com.google.protobuf.Descriptors.Descriptor
+            getDescriptorForType() {
+                return com.yunhui.job.common.proto.RequestProto.internal_static_com_yunhui_job_common_proto_Param_descriptor;
+            }
+
+            @java.lang.Override
+            public com.yunhui.job.common.proto.RequestProto.Param getDefaultInstanceForType() {
+                return com.yunhui.job.common.proto.RequestProto.Param.getDefaultInstance();
+            }
+
+            @java.lang.Override
+            public com.yunhui.job.common.proto.RequestProto.Param build() {
+                com.yunhui.job.common.proto.RequestProto.Param result = buildPartial();
+                if (!result.isInitialized()) {
+                    throw newUninitializedMessageException(result);
+                }
+                return result;
+            }
+
+            @java.lang.Override
+            public com.yunhui.job.common.proto.RequestProto.Param buildPartial() {
+                com.yunhui.job.common.proto.RequestProto.Param result = new com.yunhui.job.common.proto.RequestProto.Param(this);
+                result.key_ = key_;
+                result.value_ = value_;
+                onBuilt();
+                return result;
+            }
+
+            @java.lang.Override
+            public Builder clone() {
+                return super.clone();
+            }
+
+            @java.lang.Override
+            public Builder setField(
+                    com.google.protobuf.Descriptors.FieldDescriptor field,
+                    java.lang.Object value) {
+                return super.setField(field, value);
+            }
+
+            @java.lang.Override
+            public Builder clearField(
+                    com.google.protobuf.Descriptors.FieldDescriptor field) {
+                return super.clearField(field);
+            }
+
+            @java.lang.Override
+            public Builder clearOneof(
+                    com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+                return super.clearOneof(oneof);
+            }
+
+            @java.lang.Override
+            public Builder setRepeatedField(
+                    com.google.protobuf.Descriptors.FieldDescriptor field,
+                    int index, java.lang.Object value) {
+                return super.setRepeatedField(field, index, value);
+            }
+
+            @java.lang.Override
+            public Builder addRepeatedField(
+                    com.google.protobuf.Descriptors.FieldDescriptor field,
+                    java.lang.Object value) {
+                return super.addRepeatedField(field, value);
+            }
+
+            @java.lang.Override
+            public Builder mergeFrom(com.google.protobuf.Message other) {
+                if (other instanceof com.yunhui.job.common.proto.RequestProto.Param) {
+                    return mergeFrom((com.yunhui.job.common.proto.RequestProto.Param) other);
+                } else {
+                    super.mergeFrom(other);
+                    return this;
+                }
+            }
+
+            public Builder mergeFrom(com.yunhui.job.common.proto.RequestProto.Param other) {
+                if (other == com.yunhui.job.common.proto.RequestProto.Param.getDefaultInstance()) return this;
+                if (!other.getKey().isEmpty()) {
+                    key_ = other.key_;
+                    onChanged();
+                }
+                if (!other.getValue().isEmpty()) {
+                    value_ = other.value_;
+                    onChanged();
+                }
+                this.mergeUnknownFields(other.unknownFields);
+                onChanged();
+                return this;
+            }
+
+            @java.lang.Override
+            public final boolean isInitialized() {
+                return true;
+            }
+
+            @java.lang.Override
+            public Builder mergeFrom(
+                    com.google.protobuf.CodedInputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                com.yunhui.job.common.proto.RequestProto.Param parsedMessage = null;
+                try {
+                    parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+                } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                    parsedMessage = (com.yunhui.job.common.proto.RequestProto.Param) e.getUnfinishedMessage();
+                    throw e.unwrapIOException();
+                } finally {
+                    if (parsedMessage != null) {
+                        mergeFrom(parsedMessage);
+                    }
+                }
+                return this;
+            }
+
+            private java.lang.Object key_ = "";
+
+            /**
+             * <code>string key = 1;</code>
+             *
+             * @return The key.
+             */
+            public java.lang.String getKey() {
+                java.lang.Object ref = key_;
+                if (!(ref instanceof java.lang.String)) {
+                    com.google.protobuf.ByteString bs =
+                            (com.google.protobuf.ByteString) ref;
+                    java.lang.String s = bs.toStringUtf8();
+                    key_ = s;
+                    return s;
+                } else {
+                    return (java.lang.String) ref;
+                }
+            }
+
+            /**
+             * <code>string key = 1;</code>
+             *
+             * @return The bytes for key.
+             */
+            public com.google.protobuf.ByteString
+            getKeyBytes() {
+                java.lang.Object ref = key_;
+                if (ref instanceof String) {
+                    com.google.protobuf.ByteString b =
+                            com.google.protobuf.ByteString.copyFromUtf8(
+                                    (java.lang.String) ref);
+                    key_ = b;
+                    return b;
+                } else {
+                    return (com.google.protobuf.ByteString) ref;
+                }
+            }
+
+            /**
+             * <code>string key = 1;</code>
+             *
+             * @param value The key to set.
+             * @return This builder for chaining.
+             */
+            public Builder setKey(
+                    java.lang.String value) {
+                if (value == null) {
+                    throw new NullPointerException();
+                }
+
+                key_ = value;
+                onChanged();
+                return this;
+            }
+
+            /**
+             * <code>string key = 1;</code>
+             *
+             * @return This builder for chaining.
+             */
+            public Builder clearKey() {
+
+                key_ = getDefaultInstance().getKey();
+                onChanged();
+                return this;
+            }
+
+            /**
+             * <code>string key = 1;</code>
+             *
+             * @param value The bytes for key to set.
+             * @return This builder for chaining.
+             */
+            public Builder setKeyBytes(
+                    com.google.protobuf.ByteString value) {
+                if (value == null) {
+                    throw new NullPointerException();
+                }
+                checkByteStringIsUtf8(value);
+
+                key_ = value;
+                onChanged();
+                return this;
+            }
+
+            private java.lang.Object value_ = "";
+
+            /**
+             * <code>string value = 2;</code>
+             *
+             * @return The value.
+             */
+            public java.lang.String getValue() {
+                java.lang.Object ref = value_;
+                if (!(ref instanceof java.lang.String)) {
+                    com.google.protobuf.ByteString bs =
+                            (com.google.protobuf.ByteString) ref;
+                    java.lang.String s = bs.toStringUtf8();
+                    value_ = s;
+                    return s;
+                } else {
+                    return (java.lang.String) ref;
+                }
+            }
+
+            /**
+             * <code>string value = 2;</code>
+             *
+             * @return The bytes for value.
+             */
+            public com.google.protobuf.ByteString
+            getValueBytes() {
+                java.lang.Object ref = value_;
+                if (ref instanceof String) {
+                    com.google.protobuf.ByteString b =
+                            com.google.protobuf.ByteString.copyFromUtf8(
+                                    (java.lang.String) ref);
+                    value_ = b;
+                    return b;
+                } else {
+                    return (com.google.protobuf.ByteString) ref;
+                }
+            }
+
+            /**
+             * <code>string value = 2;</code>
+             *
+             * @param value The value to set.
+             * @return This builder for chaining.
+             */
+            public Builder setValue(
+                    java.lang.String value) {
+                if (value == null) {
+                    throw new NullPointerException();
+                }
+
+                value_ = value;
+                onChanged();
+                return this;
+            }
+
+            /**
+             * <code>string value = 2;</code>
+             *
+             * @return This builder for chaining.
+             */
+            public Builder clearValue() {
+
+                value_ = getDefaultInstance().getValue();
+                onChanged();
+                return this;
+            }
+
+            /**
+             * <code>string value = 2;</code>
+             *
+             * @param value The bytes for value to set.
+             * @return This builder for chaining.
+             */
+            public Builder setValueBytes(
+                    com.google.protobuf.ByteString value) {
+                if (value == null) {
+                    throw new NullPointerException();
+                }
+                checkByteStringIsUtf8(value);
+
+                value_ = value;
+                onChanged();
+                return this;
+            }
+
+            @java.lang.Override
+            public final Builder setUnknownFields(
+                    final com.google.protobuf.UnknownFieldSet unknownFields) {
+                return super.setUnknownFields(unknownFields);
+            }
+
+            @java.lang.Override
+            public final Builder mergeUnknownFields(
+                    final com.google.protobuf.UnknownFieldSet unknownFields) {
+                return super.mergeUnknownFields(unknownFields);
+            }
 
 
-      // @@protoc_insertion_point(builder_scope:com.yunhui.job.common.proto.Param)
+            // @@protoc_insertion_point(builder_scope:com.yunhui.job.common.proto.Param)
+        }
+
+        // @@protoc_insertion_point(class_scope:com.yunhui.job.common.proto.Param)
+        private static final com.yunhui.job.common.proto.RequestProto.Param DEFAULT_INSTANCE;
+
+        static {
+            DEFAULT_INSTANCE = new com.yunhui.job.common.proto.RequestProto.Param();
+        }
+
+        public static com.yunhui.job.common.proto.RequestProto.Param getDefaultInstance() {
+            return DEFAULT_INSTANCE;
+        }
+
+        private static final com.google.protobuf.Parser<Param>
+                PARSER = new com.google.protobuf.AbstractParser<Param>() {
+            @java.lang.Override
+            public Param parsePartialFrom(
+                    com.google.protobuf.CodedInputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return new Param(input, extensionRegistry);
+            }
+        };
+
+        public static com.google.protobuf.Parser<Param> parser() {
+            return PARSER;
+        }
+
+        @java.lang.Override
+        public com.google.protobuf.Parser<Param> getParserForType() {
+            return PARSER;
+        }
+
+        @java.lang.Override
+        public com.yunhui.job.common.proto.RequestProto.Param getDefaultInstanceForType() {
+            return DEFAULT_INSTANCE;
+        }
+
     }
 
-    // @@protoc_insertion_point(class_scope:com.yunhui.job.common.proto.Param)
-    private static final com.yunhui.job.common.proto.RequestProto.Param DEFAULT_INSTANCE;
+    private static final com.google.protobuf.Descriptors.Descriptor
+            internal_static_com_yunhui_job_common_proto_Request_descriptor;
+    private static final
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+            internal_static_com_yunhui_job_common_proto_Request_fieldAccessorTable;
+    private static final com.google.protobuf.Descriptors.Descriptor
+            internal_static_com_yunhui_job_common_proto_Param_descriptor;
+    private static final
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+            internal_static_com_yunhui_job_common_proto_Param_fieldAccessorTable;
+
+    public static com.google.protobuf.Descriptors.FileDescriptor
+    getDescriptor() {
+        return descriptor;
+    }
+
+    private static com.google.protobuf.Descriptors.FileDescriptor
+            descriptor;
+
     static {
-      DEFAULT_INSTANCE = new com.yunhui.job.common.proto.RequestProto.Param();
+        java.lang.String[] descriptorData = {
+                "\n\rrequest.proto\022\033com.yunhui.job.common.p" +
+                        "roto\"\243\001\n\007Request\022/\n\004type\030\001 \001(\0162!.com.yun" +
+                        "hui.job.common.proto.Type\0223\n\006status\030\002 \001(" +
+                        "\0162#.com.yunhui.job.common.proto.Status\0222" +
+                        "\n\006params\030\003 \003(\0132\".com.yunhui.job.common.p" +
+                        "roto.Param\"#\n\005Param\022\013\n\003key\030\001 \001(\t\022\r\n\005valu" +
+                        "e\030\002 \001(\t* \n\006Status\022\013\n\007SUCCESS\020\000\022\t\n\005ERROR\020" +
+                        "\001*C\n\004Type\022\010\n\004PING\020\000\022\010\n\004PONG\020\001\022\013\n\007REQUEST" +
+                        "\020\002\022\014\n\010RESPONSE\020\003\022\014\n\010REGISTER\020\004B.\n\033com.yu" +
+                        "nhui.job.common.protoB\014RequestProto\200\001\001b\006" +
+                        "proto3"
+        };
+        descriptor = com.google.protobuf.Descriptors.FileDescriptor
+                .internalBuildGeneratedFileFrom(descriptorData,
+                        new com.google.protobuf.Descriptors.FileDescriptor[]{
+                        });
+        internal_static_com_yunhui_job_common_proto_Request_descriptor =
+                getDescriptor().getMessageTypes().get(0);
+        internal_static_com_yunhui_job_common_proto_Request_fieldAccessorTable = new
+                com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+                internal_static_com_yunhui_job_common_proto_Request_descriptor,
+                new java.lang.String[]{"Type", "Status", "Params",});
+        internal_static_com_yunhui_job_common_proto_Param_descriptor =
+                getDescriptor().getMessageTypes().get(1);
+        internal_static_com_yunhui_job_common_proto_Param_fieldAccessorTable = new
+                com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+                internal_static_com_yunhui_job_common_proto_Param_descriptor,
+                new java.lang.String[]{"Key", "Value",});
     }
 
-    public static com.yunhui.job.common.proto.RequestProto.Param getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<Param>
-        PARSER = new com.google.protobuf.AbstractParser<Param>() {
-      @java.lang.Override
-      public Param parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new Param(input, extensionRegistry);
-      }
-    };
-
-    public static com.google.protobuf.Parser<Param> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<Param> getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.yunhui.job.common.proto.RequestProto.Param getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
-
-  }
-
-  private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_yunhui_job_common_proto_Request_descriptor;
-  private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_com_yunhui_job_common_proto_Request_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_yunhui_job_common_proto_Param_descriptor;
-  private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_com_yunhui_job_common_proto_Param_fieldAccessorTable;
-
-  public static com.google.protobuf.Descriptors.FileDescriptor
-      getDescriptor() {
-    return descriptor;
-  }
-  private static  com.google.protobuf.Descriptors.FileDescriptor
-      descriptor;
-  static {
-    java.lang.String[] descriptorData = {
-      "\n\rrequest.proto\022\033com.yunhui.job.common.p" +
-      "roto\"\243\001\n\007Request\022/\n\004type\030\001 \001(\0162!.com.yun" +
-      "hui.job.common.proto.Type\0223\n\006status\030\002 \001(" +
-      "\0162#.com.yunhui.job.common.proto.Status\0222" +
-      "\n\006params\030\003 \003(\0132\".com.yunhui.job.common.p" +
-      "roto.Param\"#\n\005Param\022\013\n\003key\030\001 \001(\t\022\r\n\005valu" +
-      "e\030\002 \001(\t* \n\006Status\022\013\n\007SUCCESS\020\000\022\t\n\005ERROR\020" +
-      "\001*C\n\004Type\022\010\n\004PING\020\000\022\010\n\004PONG\020\001\022\013\n\007REQUEST" +
-      "\020\002\022\014\n\010RESPONSE\020\003\022\014\n\010REGISTER\020\004B.\n\033com.yu" +
-      "nhui.job.common.protoB\014RequestProto\200\001\001b\006" +
-      "proto3"
-    };
-    descriptor = com.google.protobuf.Descriptors.FileDescriptor
-      .internalBuildGeneratedFileFrom(descriptorData,
-        new com.google.protobuf.Descriptors.FileDescriptor[] {
-        });
-    internal_static_com_yunhui_job_common_proto_Request_descriptor =
-      getDescriptor().getMessageTypes().get(0);
-    internal_static_com_yunhui_job_common_proto_Request_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_com_yunhui_job_common_proto_Request_descriptor,
-        new java.lang.String[] { "Type", "Status", "Params", });
-    internal_static_com_yunhui_job_common_proto_Param_descriptor =
-      getDescriptor().getMessageTypes().get(1);
-    internal_static_com_yunhui_job_common_proto_Param_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_com_yunhui_job_common_proto_Param_descriptor,
-        new java.lang.String[] { "Key", "Value", });
-  }
-
-  // @@protoc_insertion_point(outer_class_scope)
+    // @@protoc_insertion_point(outer_class_scope)
 }

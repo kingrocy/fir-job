@@ -6,9 +6,7 @@ import io.netty.channel.ChannelHandlerContext;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang3.RandomUtils;
 
-import java.util.Collections;
 import java.util.Map;
-import java.util.Random;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -23,7 +21,7 @@ public class ConnectPool {
     private Map<String, Set<String>> appNameIpMap = new ConcurrentHashMap<>();
 
 
-    public void registerConnect(String ip,String appName,ChannelHandlerContext ctx){
+    public void registerConnect(String ip, String appName, ChannelHandlerContext ctx) {
         ipMapingCtx.put(ip, ctx);
         if (appNameIpMap.containsKey(appName)) {
             appNameIpMap.get(appName).add(ip);
@@ -32,13 +30,13 @@ public class ConnectPool {
         }
     }
 
-    public ChannelHandlerContext getConnect(String ip){
+    public ChannelHandlerContext getConnect(String ip) {
         return ipMapingCtx.get(ip);
     }
 
-    public String randomIp(String appName){
+    public String randomIp(String appName) {
         Set<String> ips = appNameIpMap.get(appName);
-        if(CollectionUtils.isEmpty(ips)){
+        if (CollectionUtils.isEmpty(ips)) {
             return null;
         }
         int index = RandomUtils.nextInt(0, ips.size());
