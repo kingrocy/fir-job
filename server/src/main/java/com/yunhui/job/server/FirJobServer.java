@@ -27,8 +27,6 @@ import javax.annotation.PostConstruct;
 @Service
 public class FirJobServer {
 
-    private ConnectPool connectPool;
-
     private ServerHandler serverHandler;
 
     @Autowired
@@ -37,10 +35,12 @@ public class FirJobServer {
     @Autowired
     JobQueue jobQueue;
 
+    @Autowired
+    ConnectPool connectPool;
+
     @PostConstruct
     public void start() {
-        connectPool = new ConnectPool();
-        serverHandler = new ServerHandler(connectPool, basicDao);
+        serverHandler = new ServerHandler(basicDao);
         /**
          * 启动netty
          */

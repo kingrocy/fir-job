@@ -2,10 +2,10 @@ package com.yunhui.job.handler;
 
 import com.google.protobuf.InvalidProtocolBufferException;
 import com.yunhui.job.common.proto.RequestProto;
-import com.yunhui.job.connect.ConnectPool;
 import com.yunhui.job.dao.BasicDao;
 import com.yunhui.job.handler.builder.RequestHandlerFactoryBuilder;
 import io.netty.buffer.ByteBuf;
+import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
@@ -21,8 +21,6 @@ import lombok.extern.slf4j.Slf4j;
 @AllArgsConstructor
 @ChannelHandler.Sharable
 public class ServerHandler extends ChannelInboundHandlerAdapter {
-
-    private ConnectPool connectPool;
 
     @Getter
     private BasicDao basicDao;
@@ -41,5 +39,15 @@ public class ServerHandler extends ChannelInboundHandlerAdapter {
         byteBuf.release();
         RequestProto.Request request = RequestProto.Request.parseFrom(data);
         return request;
+    }
+
+    public ChannelFuture sendMsg(ChannelHandlerContext ctx, Object msg) {
+        RequestProto.Request request = (RequestProto.Request) msg;
+        ByteBuf byteBuf = ctx.channel().alloc().heapBuffer();
+        byteBuf.writeBytes(request.toByteArray());
+        if (ctx.channel().isActive()) {
+            return ctx.channel().writeAndFlush(byteBuf);
+        }
+        return null;
     }
 }

@@ -5,6 +5,7 @@ import com.google.common.collect.Lists;
 import io.netty.channel.ChannelHandlerContext;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang3.RandomUtils;
+import org.springframework.stereotype.Component;
 
 import java.util.Map;
 import java.util.Set;
@@ -14,6 +15,7 @@ import java.util.concurrent.ConcurrentHashMap;
  * @Date : 2020/1/21 1:58 下午
  * @Author : dushaoyun
  */
+@Component
 public class ConnectPool {
 
     private Map<String, ChannelHandlerContext> ipMapingCtx = new ConcurrentHashMap<>();
